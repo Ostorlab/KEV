@@ -1,0 +1,219 @@
+kind: AgentGroup
+description: Grouping of 3 agents.
+agents:
+  - key: agent/ostorlab/nuclei
+    version: 0.6.1
+    args:
+      - name: template_urls
+        type: array
+        description: List of template urls to run. These will be fetched by the agent
+          and passed to Nuclei.
+        value: 
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-35464.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-27561.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2017-9822.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-22536.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-26085.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-25213.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-26855.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-21973.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2014-6287.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-9670.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2018-13379.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-26134.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2018-7602.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2015-7450.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-38647.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-35587.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-17496.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-7481.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2016-3088.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-26143.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-17463.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-17530.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-36537.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-24706.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-26138.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2009-1151.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-20038.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-29464.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-25223.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2018-18809.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2017-5638.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2018-0296.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-44877.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-8515.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-27926.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-29583.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-11978.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-5847.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-16759.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-21972.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-5902.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-25717.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-27350.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2013-2251.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-33246.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-22205.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-47986.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-0193.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-9054.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-41773.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-1040.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-26084.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-38205.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-47966.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2016-4437.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2018-11776.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-35405.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-11510.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2018-15961.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-7238.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-27593.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-38035.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-42258.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2015-1427.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-1497.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-21587.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-44515.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2018-6530.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2017-1000486.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-29499.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-1388.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-44077.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-36804.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-8193.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-34362.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2017-12617.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-39226.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-9978.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-10199.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2016-6277.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2010-2861.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2017-5521.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-6340.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-23131.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-11580.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-40438.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-44228.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-3396.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-16920.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-17558.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-22965.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-10068.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-28432.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-13927.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-20887.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-32315.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-18935.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-11738.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2017-9791.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-24489.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-26919.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2017-10271.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2018-1000861.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-6287.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-7609.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-21985.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2017-9841.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-40539.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-24990.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-11581.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-36260.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-7961.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-33891.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-0669.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-3452.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-37580.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-26360.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-23134.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-22963.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-1956.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2018-7600.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-26352.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-2616.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-2725.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-7192.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-20085.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-35078.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-39144.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-42793.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-10148.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-25506.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-46169.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-30525.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-16846.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2016-1555.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2017-12149.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-29298.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2017-5689.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-37042.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-3929.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-14864.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-8644.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-21975.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-35914.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2017-12615.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-16057.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2017-9805.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-14882.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2017-17562.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-45046.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-29303.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-21315.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-1653.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-3398.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-3129.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-15107.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-42237.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2015-3035.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-40870.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-1579.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-1498.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2018-10562.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-22986.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-14750.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2018-1273.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-40684.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-5410.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-24112.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-22005.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-22502.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-19781.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-42013.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-20090.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-6207.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-22954.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-15505.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2017-15944.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-22947.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-31755.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-22515.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2014-3120.yaml
+      - name: use_default_templates
+        type: boolean
+        description: use nuclei's default templates to scan.
+        value: true
+      - name: https
+        type: boolean
+        description: Target that doesn't specify protocol will use this argument to set
+          the protocol to either http or https.
+        value: true
+      - name: port
+        type: number
+        description: Target that doesn't specify port will use this argument to set the
+          target port.
+        value: 443
+      - name: scope_urls_regex
+        type: string
+        description: to define scanning scope.
+        value: ""
+      - name: vpn_config
+        type: string
+        description: Content of the VPN:wg0.conf configuration file.
+        value: ""
+      - name: dns_config
+        type: string
+        description: Content of the /etc/resolv.conf file.
+        value: ""
+    port_mapping: []

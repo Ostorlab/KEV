@@ -28,3 +28,28 @@ This repository is structured to facilitate effective vulnerability detection an
 For the moment, we are currently focused on the CISA KEV Database. However, we have plans to expand our coverage to include more databases in the future. You can find details about different CVEs in the following sheet:
  
 🔗 [CVE Details Spreadsheet](https://docs.google.com/spreadsheets/d/1z-d5oWDjvFP66otAtndPW-GRfS05-ElA0p5AwfcGjrQ/edit?usp=sharing)
+
+
+## Requirements
+
+Docker is required to run scans locally. To install docker, please follow these
+[instructions](https://docs.docker.com/get-docker/).
+
+## Installing
+
+Ostorlab ships as a Python package on pypi. To install it, simply run the following command if you have `pip` already
+installed.
+
+```shell
+pip install -U ostorlab
+```
+## Getting Started
+
+To perform your first scan, simply run the following command:
+
+```shell
+ostorlab scan  run --install -g agentGroup.yaml ip 8.8.8.8
+```
+This command will download and install the agents specified in the YAML file , and target the ip `8.8.8.8`.
+For more information, please refer to the [Ostorlab Documentation](https://github.com/Ostorlab/ostorlab/blob/main/README.md)
+
