@@ -45,11 +45,36 @@ pip install -U ostorlab
 ```
 ## Getting Started
 
-To perform your first scan, simply run the following command:
+To perform your first scan, you have several options depending on your target. Here's how you can get started:
+
+### Scanning an IP Address
+
+To scan an IP address, simply run the following command:
 
 ```shell
-ostorlab scan  run --install -g agentGroup.yaml ip 8.8.8.8
+ostorlab scan run --install -g agentGroup.yaml ip 8.8.8.8
 ```
-This command will download and install the agents specified in the YAML file , and target the ip `8.8.8.8`.
-For more information, please refer to the [Ostorlab Documentation](https://github.com/Ostorlab/ostorlab/blob/main/README.md)
 
+And you can scan more than one IP address by specifying them, separated by spaces:
+```shell
+ostorlab scan run --install -g agentGroup.yaml ip 8.8.8.8 1.1.1.1
+```
+This command will download and install the agents specified in the YAML file and target the provided IP addresses, such as 8.8.8.8 and 1.1.1.1.
+
+### Scanning a Domain:
+
+To scan a domain , simply run the following command:
+
+```shell
+ostorlab scan run --install -g agent_group.yaml domain-name example.com
+```
+This command will download and install the required agents specified in the YAML file and perform the scan on the domain "example.com."
+
+### Scanning a Link:
+
+To scan a link, simply run the following command:
+
+```shell
+ostorlab scan run --install -g agent_group.yaml link --url https://example.com --method get
+```
+This command will download and install the required agents specified in the YAML file and perform the scan on the link "https[.]example[.]com" using the specified method  .

@@ -1,8 +1,7 @@
 kind: AgentGroup
-description: Grouping of 3 agents.
+description: This agent group will run various Nuclei templates on different open ports
 agents:
   - key: agent/ostorlab/nuclei
-    version: 0.6.1
     args:
       - name: template_urls
         type: array
@@ -193,27 +192,46 @@ agents:
       - name: use_default_templates
         type: boolean
         description: use nuclei's default templates to scan.
-        value: true
-      - name: https
+        value: false
+
+  - key: agent/ostorlab/nmap
+    args:
+      - name: fast_mode
         type: boolean
-        description: Target that doesn't specify protocol will use this argument to set
-          the protocol to either http or https.
+        description: Fast mode scans fewer ports than the default mode.
         value: true
-      - name: port
-        type: number
-        description: Target that doesn't specify port will use this argument to set the
-          target port.
-        value: 443
-      - name: scope_urls_regex
+      - name: ports
         type: string
-        description: to define scanning scope.
-        value: ""
-      - name: vpn_config
+        description: List of ports to scan.
+        value: 0-65535
+      - name: no_ping
+        type: boolean
+        description: Treat all hosts as online, skip host discovery.
+        value: true
+      - name: version_info
+        type: boolean
+        description: Probe open ports to determine service/version info.
+        value: true
+      - name: timing_template
         type: string
-        description: Content of the VPN:wg0.conf configuration file.
-        value: ""
-      - name: dns_config
-        type: string
-        description: Content of the /etc/resolv.conf file.
-        value: ""
-    port_mapping: []
+        description: Template of timing settings (T0, T1, ... T5).
+        value: T3
+      - name: script_default
+        type: bool
+        description: Script scan, equivalent to --script=default
+        value: "True"
+      - name: scripts
+        type: array
+        description: List of scripts to run using Nmap
+        value: "['banner']"
+      - name: max_network_mask_ipv4
+        type: int
+        description: When scanning an IP range, maximum network size, if the network is
+          above max, network in divided into subnetworks.
+        value: "26"
+      - name: max_network_mask_ipv6
+        type: int
+        description: When scanning an IP range, maximum network size, if the network is
+          above max, network in divided into subnetworks.
+        value: "120"
+
