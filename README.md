@@ -66,7 +66,7 @@ This command will download and install the agents specified in the YAML file and
 To scan a domain , simply run the following command:
 
 ```shell
-ostorlab scan run --install -g agent_group.yaml domain-name example.com
+ostorlab scan run --install -g agentGroup.yaml domain-name example.com
 ```
 This command will download and install the required agents specified in the YAML file and perform the scan on the domain "example.com."
 
@@ -75,6 +75,6 @@ This command will download and install the required agents specified in the YAML
 To scan a link, simply run the following command:
 
 ```shell
-ostorlab scan run --install -g agent_group.yaml link --url https://example.com --method get
+ostorlab scan run --install -g agentGroup.yaml link --url https://example.com --method GET
 ```
 This command will download and install the required agents specified in the YAML file and perform the scan on the link "https[.]example[.]com" using the specified method.
