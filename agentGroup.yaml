@@ -1,5 +1,5 @@
 kind: AgentGroup
-description: This agent group will conduct various scans on different open ports to identify known exploited vulnerabilities in your target.
+description: This agent group will conduct various scans on different open ports to identify known exploited vulnerabilities on your target.
 agents:
   - key: agent/ostorlab/nuclei
     args:
