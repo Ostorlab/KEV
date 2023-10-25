@@ -77,4 +77,4 @@ To scan a link, simply run the following command:
 ```shell
 ostorlab scan run --install -g agent_group.yaml link --url https://example.com --method get
 ```
-This command will download and install the required agents specified in the YAML file and perform the scan on the link "https[.]example[.]com" using the specified method  .
+This command will download and install the required agents specified in the YAML file and perform the scan on the link "https[.]example[.]com" using the specified method.
