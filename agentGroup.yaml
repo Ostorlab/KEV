@@ -189,49 +189,17 @@ agents:
             -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-31755.yaml
             -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-22515.yaml
             -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2014-3120.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-1938.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2017-3881.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-7247.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2018-2628.yaml
+          # Please be aware that the following template may lead to a denial of service (DoS) situation. Consider the potential consequences carefully before removing this comment.
+          #-https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-3519.yaml
       - name: use_default_templates
         type: boolean
         description: use nuclei's default templates to scan.
         value: false
 
   - key: agent/ostorlab/nmap
-    args:
-      - name: fast_mode
-        type: boolean
-        description: Fast mode scans fewer ports than the default mode.
-        value: true
-      - name: ports
-        type: string
-        description: List of ports to scan.
-        value: 0-65535
-      - name: no_ping
-        type: boolean
-        description: Treat all hosts as online, skip host discovery.
-        value: true
-      - name: version_info
-        type: boolean
-        description: Probe open ports to determine service/version info.
-        value: true
-      - name: timing_template
-        type: string
-        description: Template of timing settings (T0, T1, ... T5).
-        value: T3
-      - name: script_default
-        type: bool
-        description: Script scan, equivalent to --script=default
-        value: "True"
-      - name: scripts
-        type: array
-        description: List of scripts to run using Nmap
-        value: "['banner']"
-      - name: max_network_mask_ipv4
-        type: int
-        description: When scanning an IP range, maximum network size, if the network is
-          above max, network in divided into subnetworks.
-        value: "26"
-      - name: max_network_mask_ipv6
-        type: int
-        description: When scanning an IP range, maximum network size, if the network is
-          above max, network in divided into subnetworks.
-        value: "120"
+    args: []
 
