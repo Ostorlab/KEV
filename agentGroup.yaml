@@ -194,8 +194,7 @@ agents:
             -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2017-3881.yaml
             -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-7247.yaml
             -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2018-2628.yaml
-            # Please be aware that the following template may lead to a denial of service (DoS) situation. Consider the potential consequences carefully before you uncomment the line below.
-            #-https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-3519.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-3519.yaml
       - name: use_default_templates
         type: boolean
         description: use nuclei's default templates to scan.
