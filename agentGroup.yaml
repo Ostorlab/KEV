@@ -1,5 +1,6 @@
 kind: AgentGroup
 description: This agent group will conduct various scans on different open ports to identify known exploited vulnerabilities on your target.
+name: known_exploited_vulnerabilities_detectors
 agents:
   - key: agent/ostorlab/nuclei
     args:
@@ -188,7 +189,11 @@ agents:
             -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2022-22947.yaml
             -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-31755.yaml
             -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-22515.yaml
-            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2014-3120.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2014-3120.yaml            
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-1938.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2017-3881.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-7247.yaml
+            -https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2018-2628.yaml
       - name: use_default_templates
         type: boolean
         description: use nuclei's default templates to scan.
