@@ -198,6 +198,7 @@ agents:
         type: boolean
         description: use nuclei's default templates to scan.
         value: false
-
+  - key: agent/ostorlab/tsunami
   - key: agent/ostorlab/nmap
+
 
