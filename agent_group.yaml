@@ -206,6 +206,8 @@ agents:
         type: array
         description: List of metasploit modules with their respective options
         value:
+          - module: 'exploit/multi/http/atlassian_confluence_rce_cve_2023_22515'
+          - module: 'exploit/linux/http/dlink_hnap_header_exec_noauth'
           - module: 'auxiliary/scanner/http/adobe_xml_inject'
           - module: 'exploit/linux/http/alcatel_omnipcx_mastercgi_exec'
           # - module: 'exploit/multi/http/struts_code_exec_exception_delegator'
