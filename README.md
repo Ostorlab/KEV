@@ -1020,7 +1020,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2023-1389    | ✅           | Added to Asteroid.                                |
 | CVE-2023-1671    | ⏳           |                                                   |
 | CVE-2023-20109   | ❌           | Not remotely exploitable/User interaction needed. |
-| CVE-2023-20198   | ⏳           |                                                   |
+| CVE-2023-20198   | ✅           | Nuclei Template was used.                         |
 | CVE-2023-20269   | ❌           | Not remotely exploitable/User interaction needed. |
 | CVE-2023-20273   | ❌           | Not remotely exploitable/User interaction needed. |
 | CVE-2023-2033    | ❌           | Not remotely exploitable/User interaction needed. |
