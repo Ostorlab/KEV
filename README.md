@@ -224,7 +224,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2015-1635    | ✅           | Metasploit module was used.                       |
 | CVE-2015-1641    | ❌           | Not remotely exploitable/User interaction needed. |
 | CVE-2015-1642    | ❌           | Not remotely exploitable/User interaction needed. |
-| CVE-2015-1671    | ❌           | Not remotely exploitable/User interaction needed. |
+| CVE-2015-1671    | ✅           | Nuclei Template was used.                         |
 | CVE-2015-1701    | ❌           | Not remotely exploitable/User interaction needed. |
 | CVE-2015-1769    | ❌           | Not remotely exploitable/User interaction needed. |
 | CVE-2015-1770    | ❌           | Not remotely exploitable/User interaction needed. |
@@ -1020,7 +1020,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2023-1389    | ✅           | Added to Asteroid.                                |
 | CVE-2023-1671    | ⏳           |                                                   |
 | CVE-2023-20109   | ❌           | Not remotely exploitable/User interaction needed. |
-| CVE-2023-20198   | ⏳           |                                                   |
+| CVE-2023-20198   | ✅           | Nuclei Template was used.                         |
 | CVE-2023-20269   | ❌           | Not remotely exploitable/User interaction needed. |
 | CVE-2023-20273   | ❌           | Not remotely exploitable/User interaction needed. |
 | CVE-2023-2033    | ❌           | Not remotely exploitable/User interaction needed. |
