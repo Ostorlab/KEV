@@ -419,7 +419,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2018-13382   | ✅           | Added to Asteroid.                                |
 | CVE-2018-13383   | ❌           | Not remotely exploitable/User interaction needed. |
 | CVE-2018-14558   | ✅           | Added to Asteroid.                                |
-| CVE-2018-14667   | ⏳           |                                                   |
+| CVE-2018-14667   | ✅           | Added to Asteroid.                                |
 | CVE-2018-14839   | ❌           | RCE need call back .                              |
 | CVE-2018-14847   | ❌           | Metasploit module without a check/check_code.     |
 | CVE-2018-15811   | ❌           | Metasploit module without a check/check_code.     |
@@ -443,7 +443,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2018-2628    | ✅           | Metasploit module was used.                       |
 | CVE-2018-4344    | ❌           | Not remotely exploitable/User interaction needed. |
 | CVE-2018-4878    | ❌           | Not remotely exploitable/User interaction needed. |
-| CVE-2018-4939    | ⏳           |                                                   |
+| CVE-2018-4939    | ⏳           | Needs more research.                              |
 | CVE-2018-4990    | ❌           | Not remotely exploitable/User interaction needed. |
 | CVE-2018-5002    | ❌           | Not remotely exploitable/User interaction needed. |
 | CVE-2018-5430    | ❌           | Not remotely exploitable/User interaction needed. |
