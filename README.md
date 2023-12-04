@@ -70,7 +70,7 @@ agent:
 
 ```
 
-And the run it the domain you would like to taget:
+And the run it the domain you would like to target:
 
 ```shell
 ostorlab scan run --install -g agent_group.yaml domain-name example.com
@@ -191,7 +191,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2014-0322    | ❌           | Not remotely exploitable/User interaction needed. |
 | CVE-2014-0496    | ❌           | Not remotely exploitable/User interaction needed. |
 | CVE-2014-0546    | ❌           | Not remotely exploitable/User interaction needed. |
-| CVE-2014-0780    | ⏳           |                                                   |
+| CVE-2014-0780    | ✅           | Added to Asteroid.                                |
 | CVE-2014-1761    | ❌           | Not remotely exploitable/User interaction needed. |
 | CVE-2014-1776    | ❌           | Not remotely exploitable/User interaction needed. |
 | CVE-2014-1812    | ❌           | Not remotely exploitable/User interaction needed. |
@@ -249,7 +249,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2015-5119    | ❌           | Not remotely exploitable/User interaction needed. |
 | CVE-2015-5122    | ❌           | Not remotely exploitable/User interaction needed. |
 | CVE-2015-5123    | ❌           | Not remotely exploitable/User interaction needed. |
-| CVE-2015-5317    | ❌           | Information discolsure: with False poc.           |
+| CVE-2015-5317    | ❌           | Information disclosure: with False poc.           |
 | CVE-2015-6175    | ❌           | Not remotely exploitable/User interaction needed. |
 | CVE-2015-7450    | ✅           | Nuclei Template was used.                         |
 | CVE-2015-7645    | ❌           | Not remotely exploitable/User interaction needed. |
@@ -271,7 +271,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2016-11021   | ❌           | Not remotely exploitable/User interaction needed. |
 | CVE-2016-1555    | ✅           | Nuclei Template was used.                         |
 | CVE-2016-1646    | ❌           | Not remotely exploitable/User interaction needed. |
-| CVE-2016-2386    | ⏳           |                                                   |
+| CVE-2016-2386    | ✅           | Added to Asteroid.                                |
 | CVE-2016-2388    | ❌           | Information disclosure .                          |
 | CVE-2016-3088    | ✅           | Nuclei Template was used.                         |
 | CVE-2016-3235    | ❌           | Not remotely exploitable/User interaction needed. |
@@ -283,7 +283,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2016-3643    | ❌           | Not remotely exploitable/User interaction needed. |
 | CVE-2016-3715    | ❌           | Not remotely exploitable/User interaction needed. |
 | CVE-2016-3718    | ❌           | Not remotely exploitable/User interaction needed. |
-| CVE-2016-3976    | ⏳           |                                                   |
+| CVE-2016-3976    | ❌           | Missing public exploit.                           |
 | CVE-2016-4117    | ❌           | Not remotely exploitable/User interaction needed. |
 | CVE-2016-4171    | ❌           | Not remotely exploitable/User interaction needed. |
 | CVE-2016-4437    | ✅           | Nuclei Template was used.                         |
@@ -1018,7 +1018,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2023-0266    | ❌           | Not remotely exploitable/User interaction needed. |
 | CVE-2023-0669    | ✅           | Nuclei Template was used.                         |
 | CVE-2023-1389    | ✅           | Added to Asteroid.                                |
-| CVE-2023-1671    | ⏳           |                                                   |
+| CVE-2023-1671    | ✅           | Nuclei Template was used.                         |
 | CVE-2023-20109   | ❌           | Not remotely exploitable/User interaction needed. |
 | CVE-2023-20198   | ✅           | Nuclei Template was used.                         |
 | CVE-2023-20269   | ❌           | Not remotely exploitable/User interaction needed. |
