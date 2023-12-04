@@ -70,7 +70,7 @@ agent:
 
 ```
 
-And the run it the domain you would like to target:
+And then run it on the domain you would like to target:
 
 ```shell
 ostorlab scan run --install -g agent_group.yaml domain-name example.com
