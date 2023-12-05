@@ -210,6 +210,7 @@ agents:
         value: false
   - key: agent/ostorlab/tsunami
   - key: agent/ostorlab/nmap
+  - key: agent/ostorlab/asteroid
   - key: agent/ostorlab/metasploit
     args:
       - name: config
