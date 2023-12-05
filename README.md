@@ -386,7 +386,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2017-8543    | ❌           | Not remotely exploitable/User interaction needed.                        |
 | CVE-2017-8570    | ❌           | Not remotely exploitable/User interaction needed.                        |
 | CVE-2017-8759    | ❌           | Not remotely exploitable/User interaction needed.                        |
-| CVE-2017-9248    | ⏳           |                                                                          |
+| CVE-2017-9248    | ✅           | Nuclei Template was used.                                                |
 | CVE-2017-9791    | ✅           | Nuclei Template was used.                                                |
 | CVE-2017-9805    | ✅           | Nuclei Template and Tsunami scanner were used.                           |
 | CVE-2017-9822    | ✅           | Nuclei Template was used.                                                |
@@ -840,7 +840,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2021-31955   | ❌           | Not remotely exploitable/User interaction needed.                        |
 | CVE-2021-31956   | ❌           | Not remotely exploitable/User interaction needed.                        |
 | CVE-2021-31979   | ❌           | Not remotely exploitable/User interaction needed.                        |
-| CVE-2021-3223    | ❌           | Covered by tsunami scanner.                                              |
+| CVE-2021-3223    | ✅           | Covered by tsunami scanner.                                              |
 | CVE-2021-32648   | ✅           | Added to Asteroid.                                                       |
 | CVE-2021-33739   | ❌           | Not remotely exploitable/User interaction needed.                        |
 | CVE-2021-33742   | ❌           | Not remotely exploitable/User interaction needed.                        |
