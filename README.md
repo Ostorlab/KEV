@@ -1131,7 +1131,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2023-4966    | ✅           | Nuclei Template was used.                                                |
 | CVE-2023-5217    | ❌           | Not remotely exploitable/User interaction needed.                        |
 | CVE-2023-5631    | ❌           | Not remotely exploitable/User interaction needed.                        |
-|                  | ✅           | Tsunami plugin tests for generic Path Traversal vulnerabilities.         |
+|                  | ✅           | Tsunami Generic Path Traversal vulnerabilities.         |
 |                  | ✅           | Tsunami Apache NiFi API Exposed UI Detector.                             |
 |                  | ✅           | Tsunami Exposed Argo Workflows instances Detector.                       |
 |                  | ✅           | Tsunami Docker API Detector.                                             |
