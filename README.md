@@ -855,7 +855,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2021-34484   | ❌           | Not remotely exploitable/User interaction needed.                        |
 | CVE-2021-34486   | ❌           | Not remotely exploitable/User interaction needed.                        |
 | CVE-2021-34523   | ❌           | Not remotely exploitable/User interaction needed.                        |
-| CVE-2021-34527   | ✅           | Metasploit module was used.                                              |
+| CVE-2021-34527   | ❌           | Unprivileged Authenticated or User interaction needed.                        |
 | CVE-2021-3493    | ❌           | Not remotely exploitable/User interaction needed.                        |
 | CVE-2021-35211   | ❌           | Missing public exploit.                                                  |
 | CVE-2021-35247   | ❌           | Missing public exploit.                                                  |

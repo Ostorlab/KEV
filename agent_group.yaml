@@ -224,12 +224,14 @@ agents:
           # - module: 'exploit/multi/http/struts_code_exec_exception_delegator'
           - module: 'exploit/multi/veritas/beagent_sha_auth_rce'
           # - module: 'auxiliary/dos/cisco/ios_telnet_rocem'
-          - module: 'exploit/windows/dcerpc/cve_2021_1675_printnightmare'
+          # - module: 'exploit/windows/dcerpc/cve_2021_1675_printnightmare'
           - module: 'exploit/multi/http/coldfusion_rds_auth_bypass'
           - module: 'exploit/windows/http/exchange_proxylogon_rce'
             options:
               - name: "EMAIL"
                 value: "administrator@localhost"
+              - name: "CheckModule"
+                value: "auxiliary/scanner/http/exchange_proxylogon"
           # - module: 'exploit/linux/http/zimbra_cpio_cve_2022_41352'
           # - module: 'exploit/linux/http/ibm_drm_rce'
           # - module: 'auxiliary/gather/mikrotik_winbox_fileread'
