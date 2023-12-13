@@ -978,7 +978,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2022-27926                                          | ✅           | Nuclei Template was used.                              |
 | CVE-2022-2856                                           | ❌           | Not remotely exploitable/User interaction needed.      |
 | CVE-2022-28810                                          | ✅           | Metasploit module was used.                            |
-| CVE-2022-28958                                          | ❌           | Not remotely exploitable/User interaction needed.      |
+| CVE-2022-28958                                          | ❌           | Fake vulnerability.                                    |
 | CVE-2022-29303                                          | ✅           | Nuclei Template was used.                              |
 | CVE-2022-29464                                          | ✅           | Nuclei Template and Tsunami scanner were used.         |
 | CVE-2022-29499                                          | ✅           | Nuclei Template was used.                              |
