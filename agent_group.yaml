@@ -205,6 +205,7 @@ agents:
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-47246.yaml
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2017-9248.yaml
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-10758.yaml
+            - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2014-6271.yaml
       - name: use_default_templates
         type: boolean
         description: use nuclei's default templates to scan.
@@ -243,7 +244,6 @@ agents:
           - module: 'exploit/linux/http/grandstream_ucm62xx_sendemail_rce'
           - module: 'exploit/linux/http/eyesofnetwork_autodiscovery_rce'
           - module: 'exploit/linux/misc/cisco_rv340_sslvpn'
-          - module: 'exploit/multi/http/apache_mod_cgi_bash_env_exec'
           # - module: 'exploit/unix/webapp/openview_connectednodes_exec'
           # - module: 'exploit/linux/http/ibm_drm_rce'
           # - module: 'exploit/multi/misc/ibm_tm1_unauth_rce'

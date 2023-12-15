@@ -204,7 +204,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2014-4123                                           | ❌           | Not remotely exploitable/User interaction needed.      |
 | CVE-2014-4148                                           | ❌           | Not remotely exploitable/User interaction needed.      |
 | CVE-2014-4404                                           | ❌           | Not remotely exploitable/User interaction needed.      |
-| CVE-2014-6271                                           | ✅           | Metasploit module was used.                            |
+| CVE-2014-6271                                           | ✅           | Nuclei template was used.                              |
 | CVE-2014-6287                                           | ✅           | Nuclei Template was used.                              |
 | CVE-2014-6324                                           | ❌           | Not remotely exploitable/User interaction needed.      |
 | CVE-2014-6332                                           | ❌           | Not remotely exploitable/User interaction needed.      |
