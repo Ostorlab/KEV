@@ -83,6 +83,29 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 
 | CVE ID                                                  | Implemented | Note                                                   |
 |---------------------------------------------------------|-------------|--------------------------------------------------------|
+| CVE-2021-27101                                          | ⌛           | Pending.                                               |
+| CVE-2021-27103                                          | ⌛           | Pending.                                               |
+| CVE-2020-29557                                          | ⌛           | Pending.                                               |
+| CVE-2006-1547                                           | ⌛           | Pending.                                               |
+| CVE-2018-0151                                           | ⌛           | Pending.                                               |
+| CVE-2015-4068                                           | ⌛           | Pending.                                               |
+| CVE-2015-0666                                           | ⌛           | Pending.                                               |
+| CVE-2022-26871                                          | ⌛           | Pending.                                               |
+| CVE-2021-27852                                          | ⌛           | Pending.                                               |
+| CVE-2022-20821                                          | ⌛           | Pending.                                               |
+| CVE-2016-8735                                           | ⌛           | Pending.                                               |
+| CVE-2020-2551                                           | ⌛           | Pending.                                               |
+| CVE-2023-6345                                           | ⌛           | Pending.                                               |
+| CVE-2023-49103                                          | ⌛           | Pending.                                               |
+| CVE-2023-42917                                          | ⌛           | Pending.                                               |
+| CVE-2023-42916                                          | ⌛           | Pending.                                               |
+| CVE-2023-33107                                          | ⌛           | Pending.                                               |
+| CVE-2023-33106                                          | ⌛           | Pending.                                               |
+| CVE-2023-33063                                          | ⌛           | Pending.                                               |
+| CVE-2022-22071                                          | ⌛           | Pending.                                               |
+| CVE-2023-41266                                          | ⌛           | Pending.                                               |
+| CVE-2023-41265                                          | ⌛           | Pending.                                               |
+| CVE-2023-6448                                           | ⌛           | Pending.                                               |
 | CVE-2023-29357                                          | ✅           | Nuclei template was used.                              |
 | CVE-2023-5631                                           | ❌           | Not remotely exploitable/User interaction needed.      |
 | CVE-2023-5217                                           | ❌           | Not remotely exploitable/User interaction needed.      |
