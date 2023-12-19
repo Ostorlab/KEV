@@ -83,6 +83,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 
 | CVE ID                                                  | Implemented | Note                                                   |
 |---------------------------------------------------------|-------------|--------------------------------------------------------|
+| CVE-2023-29357                                          | ✅           | Nuclei template was used.                              |
 | CVE-2023-5631                                           | ❌           | Not remotely exploitable/User interaction needed.      |
 | CVE-2023-5217                                           | ❌           | Not remotely exploitable/User interaction needed.      |
 | CVE-2023-4966                                           | ✅           | Nuclei Template was used.                              |
