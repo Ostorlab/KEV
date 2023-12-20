@@ -104,7 +104,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2023-33063                                          | ⌛           | Pending.                                               |
 | CVE-2022-22071                                          | ⌛           | Pending.                                               |
 | CVE-2023-41266                                          | ✅           | Nuclei template was used.                              |
-| CVE-2023-41265                                          | ⌛           | Pending.                                               |
+| CVE-2023-41265                                          | ✅           | Same Nuclei template as CVE-2023-41266.                |
 | CVE-2023-6448                                           | ⌛           | Pending.                                               |
 | CVE-2023-6553                                           | ✅           | Custom Nuclei template by Ostorlab.                    |
 | CVE-2023-29357                                          | ✅           | Nuclei template was used.                              |
