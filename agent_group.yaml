@@ -252,7 +252,7 @@ agents:
           # - module: 'exploit/multi/misc/ibm_tm1_unauth_rce'
           # - module: 'exploit/multi/http/jboss_maindeployer'
           # - module: 'auxiliary/dos/windows/http/http_sys_accept_encoding_dos_cve_2021_31166'
-          - module: 'auxiliary/dos/http/ms15_034_ulonglongadd'
+          # - module: 'auxiliary/dos/http/ms15_034_ulonglongadd'
           - module: 'exploit/windows/iis/iis_webdav_scstoragepathfromurl'
           - module: 'exploit/windows/http/desktopcentral_deserialization'
           - module: 'auxiliary/scanner/rdp/cve_2019_0708_bluekeep'
