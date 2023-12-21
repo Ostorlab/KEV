@@ -1,0 +1,59 @@
+id: redis-unauthorized-access
+
+info:
+  name: Redis Unauthorized Access Vulnerability
+  author: Mohamed Benchikh
+  severity: high
+  description:
+    The Redis server running on the remote host is not protected by password authentication. 
+    A remote attacker can exploit this to gain unauthorized access to the server.
+  reference:
+    - https://redis.io/topics/security
+    - https://www.secpod.com/blog/cisco-ios-xr-zero-day-vulnerability-being-actively-exploited-in-the-wild/
+  classification:
+    cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N
+    cvss-score: 7.2
+    cwe-id: CWE-306
+    cve-id: CVE-2022-20821,CVE-2018-0181
+  metadata:
+    max-request: 4
+  tags: network,redis,unauth,exposure,cve-2022-20821
+
+tcp:
+  - inputs:
+      - data: "info\r\nquit\r\n"
+
+    host:
+      - "{{Hostname}}"
+      - "tls://{{Hostname}}"
+    port: 6380
+    read-size: 2048
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "redis_version"
+      - type: word
+        negative: true
+        words:
+          - "redis_mode:sentinel"
+
+  - inputs:
+    - data: "info\r\nquit\r\n"
+
+    host:
+      - "{{Hostname}}"
+      - "tls://{{Hostname}}"
+    port: 6379
+    read-size: 2048
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "redis_version"
+      - type: word
+        negative: true
+        words:
+          - "redis_mode:sentinel"
