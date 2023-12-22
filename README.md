@@ -87,7 +87,6 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2021-27103                                          | ⌛           | Pending.                                               |
 | CVE-2020-29557                                          | ⌛           | Pending.                                               |
 | CVE-2006-1547                                           | ⌛           | Pending.                                               |
-| CVE-2018-0151                                           | ⌛           | Pending.                                               |
 | CVE-2015-4068                                           | ⌛           | Pending.                                               |
 | CVE-2015-0666                                           | ⌛           | Pending.                                               |
 | CVE-2022-26871                                          | ⌛           | Pending.                                               |
@@ -449,17 +448,6 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2021-27860                                          | ❌           | Not remotely exploitable/User interaction needed.      |
 | CVE-2021-27562                                          | ❌           | Not remotely exploitable/User interaction needed.      |
 | CVE-2021-27561                                          | ✅           | Nuclei Template was used.                              |
-| CVE-2021-27116                                          | ❌           | Missing public exploit.                                |
-| CVE-2021-27115                                          | ❌           | Missing public exploit.                                |
-| CVE-2021-27114                                          | ❌           | Missing public exploit.                                |
-| CVE-2021-27113                                          | ❌           | Missing public exploit.                                |
-| CVE-2021-27111                                          | ❌           | Missing public exploit.                                |
-| CVE-2021-27110                                          | ❌           | Missing public exploit.                                |
-| CVE-2021-27109                                          | ❌           | Missing public exploit.                                |
-| CVE-2021-27108                                          | ❌           | Missing public exploit.                                |
-| CVE-2021-27107                                          | ❌           | Missing public exploit.                                |
-| CVE-2021-27106                                          | ❌           | Missing public exploit.                                |
-| CVE-2021-27105                                          | ❌           | Missing public exploit.                                |
 | CVE-2021-27104                                          | ❌           | Missing public exploit.                                |
 | CVE-2021-27102                                          | ❌           | Not remotely exploitable/User interaction needed.      |
 | CVE-2021-27085                                          | ❌           | Not remotely exploitable/User interaction needed.      |
