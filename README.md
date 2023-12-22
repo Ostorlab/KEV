@@ -85,7 +85,6 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 |---------------------------------------------------------|-------------|--------------------------------------------------------|
 | CVE-2021-27101                                          | ⌛           | Pending.                                               |
 | CVE-2021-27103                                          | ⌛           | Pending.                                               |
-| CVE-2020-29557                                          | ⌛           | Pending.                                               |
 | CVE-2006-1547                                           | ⌛           | Pending.                                               |
 | CVE-2015-4068                                           | ⌛           | Pending.                                               |
 | CVE-2015-0666                                           | ⌛           | Pending.                                               |
@@ -577,6 +576,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2020-3153                                           | ❌           | Not remotely exploitable/User interaction needed.      |
 | CVE-2020-3118                                           | ❌           | Not remotely exploitable/User interaction needed.      |
 | CVE-2020-29583                                          | ✅           | Nuclei Template was used.                              |
+| CVE-2020-29557                                          | ✅           | Custom Nuclei template by Ostorlab.                    |
 | CVE-2020-28949                                          | ❌           | Not remotely exploitable/User interaction needed.      |
 | CVE-2020-27950                                          | ❌           | Not remotely exploitable/User interaction needed.      |
 | CVE-2020-27932                                          | ❌           | Not remotely exploitable/User interaction needed.      |
