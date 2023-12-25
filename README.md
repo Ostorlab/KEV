@@ -57,33 +57,32 @@ ostorlab scan run --install -g agent_group.yaml ip 8.8.8.8 1.1.1.1 4.4.4.0/24
 To scan a domain , simply run the following command:
 
 ```shell
-ostorlab scan run --install -g agent_group.yaml domain-name example.com
+ostorlab scan run --install -g agent_group.yaml domain-name www.example.com
 ```
 
 This command will download and install the required agents specified in the YAML file and perform the scan on the
-domain "example.com."
+domain `www.example.com`
 
 ### Scanning a Link:
 
 To scan a link, simply run the following command:
 
 ```shell
-ostorlab scan run --install -g agent_group.yaml link --url https://example.com --method GET
+ostorlab scan run --install -g agent_group.yaml link --url https://www.example.com --method GET
 ```
 
-This command will download and install the required agents specified in the YAML file and perform the scan on the link "
-https[.]example[.]com" using the specified method.
+This command will download and install the required agents specified in the YAML file and perform the scan on the link `https://www.example.com` using the specified method.
 
 ### Targeting all subdomains
 
-The vulnerability detectin can be paired with other tools like `subfinder` or `dnsx` to target all subdomains.
+To improve the scope of detection, it's possible to enumerate and target subdomains of a given asset by adding `subfinder` and/or `dnsx` to the agent group definition `agent_group.yaml`.
 
-Add the value:
 ```yaml
 agent:
+  ...
   - key: agent/ostorlab/subfinder
   - key: agent/ostorlab/dnsx
-
+  ...
 ```
 
 And then run it on the domain you would like to target:
