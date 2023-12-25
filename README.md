@@ -61,7 +61,7 @@ ostorlab scan run --install -g agent_group.yaml domain-name www.example.com
 ```
 
 This command will download and install the required agents specified in the YAML file and perform the scan on the
-domain `www.example.com`
+domain `www.example.com`.
 
 ### Scanning a Link:
 
