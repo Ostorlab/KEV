@@ -212,6 +212,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2023-20198                                          | ✅           | Nuclei Template was used.                              |
 | CVE-2023-20109                                          | ❌           | Not remotely exploitable/User interaction needed.      |
 | CVE-2023-2780                                           | ✅           | Official Nuclei template.                              |
+| CVE-2023-2356                                           | ✅           | Official Nuclei template.                              |
 | CVE-2023-1671                                           | ✅           | Nuclei Template was used.                              |
 | CVE-2023-1389                                           | ✅           | Added to Asteroid.                                     |
 | CVE-2023-0669                                           | ✅           | Nuclei Template was used.                              |
