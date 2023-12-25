@@ -1,8 +1,14 @@
-# Known Exploited Vulnerabilities Detector
+# Ostorlab Known Exploited Vulnerabilities
+
+![Logo](images/logo.png)
 
 ## Introduction
 
-This project is dedicated to the detection of known exploited vulnerabilities. Our goal is to provide a single command to detect all of these vulnerabilities.
+This project is dedicated to automate the detection of known exploited vulnerabilities through a single command, it includes exploits for vulnerabilities from:
+
+- [Known Exploited Vulnerabilities Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)  by CISA
+- [Tsunami](https://github.com/google/tsunami-security-scanner) by Google 
+- [Agent Asteroid](https://github.com/Ostorlab/agent_asteroid) by Ostorlab 
 
 ## Requirements
 
@@ -17,6 +23,16 @@ installed.
 ```shell
 pip install -U ostorlab
 ```
+
+## Agent group definition
+
+By default, Ostorlab KEV agent group `agent_group.yaml` uses the following agents:
+
+- [Agent Nuclei](https://github.com/Ostorlab/agent_nuclei)
+- [Agent Tsunami](https://github.com/Ostorlab/agent_tsunami)
+- [Agent Nmap](https://github.com/Ostorlab/agent_nmap)
+- [Agent Asteroid](https://github.com/Ostorlab/agent_asteroid)
+- [Agent Metasploit](https://github.com/Ostorlab/agent_metasploit)
 
 ## Getting Started
 
