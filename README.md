@@ -1,4 +1,4 @@
-# Ostorlab Known Exploited Vulnerabilities
+# Known Exploited Vulnerabilities (KEV) Detector
 
 ![Logo](images/logo.png)
 
