@@ -718,7 +718,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2019-16256                                          | ❌           | Not remotely exploitable/User interaction needed.       |
 | CVE-2019-16057                                          | ✅           | Official Nuclei template.                               |
 | CVE-2019-15949                                          | ❌           | Not remotely exploitable/User interaction needed.       |
-| CVE-2019-1579                                           | ❌           | Exploit is version dependant.                           |
+| CVE-2019-1579                                           | ✅           | Official Nuclei template.                               |
 | CVE-2019-15752                                          | ❌           | Not remotely exploitable/User interaction needed.       |
 | CVE-2019-15271                                          | ❌           | Not remotely exploitable/User interaction needed.       |
 | CVE-2019-15107                                          | ✅           | Official Nuclei template.                               |
@@ -984,7 +984,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2016-10174                                          | ❌           | Metasploit module without a check/check_code.           |
 | CVE-2016-1010                                           | ❌           | Not remotely exploitable/User interaction needed.       |
 | CVE-2016-0984                                           | ❌           | Not remotely exploitable/User interaction needed.       |
-| CVE-2016-0752                                           | ❌           | Vulnerable versions are EOL.                            |
+| CVE-2016-0752                                           | ✅           | Metasploit module.                                      |
 | CVE-2016-0189                                           | ❌           | Not remotely exploitable/User interaction needed.       |
 | CVE-2016-0185                                           | ❌           | Not remotely exploitable/User interaction needed.       |
 | CVE-2016-0167                                           | ❌           | Not remotely exploitable/User interaction needed.       |
@@ -1104,7 +1104,8 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2012-5054                                           | ❌           | Not remotely exploitable/User interaction needed.       |
 | CVE-2012-4969                                           | ❌           | Not remotely exploitable/User interaction needed.       |
 | CVE-2012-4681                                           | ❌           | Not remotely exploitable/User interaction needed.       |
-| CVE-2012-3152                                           | ✅           | Metasploit module.                                      |
+| CVE-2012-3153                                           | ✅           | Same Nuclei template as CVE-2012-3152.                  |
+| CVE-2012-3152                                           | ✅           | Official Nuclei template.                               |
 | CVE-2012-2539                                           | ❌           | Not remotely exploitable/User interaction needed.       |
 | CVE-2012-2034                                           | ❌           | Not remotely exploitable/User interaction needed.       |
 | CVE-2012-1889                                           | ❌           | Not remotely exploitable/User interaction needed.       |
