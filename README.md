@@ -718,7 +718,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2019-16256                                          | ❌           | Not remotely exploitable/User interaction needed.       |
 | CVE-2019-16057                                          | ✅           | Official Nuclei template.                               |
 | CVE-2019-15949                                          | ❌           | Not remotely exploitable/User interaction needed.       |
-| CVE-2019-1579                                           | ✅           | Official Nuclei template.                               |
+| CVE-2019-1579                                           | ❌           | Exploit is version dependant.                           |
 | CVE-2019-15752                                          | ❌           | Not remotely exploitable/User interaction needed.       |
 | CVE-2019-15271                                          | ❌           | Not remotely exploitable/User interaction needed.       |
 | CVE-2019-15107                                          | ✅           | Official Nuclei template.                               |
