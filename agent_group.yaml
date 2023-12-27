@@ -214,6 +214,7 @@ agents:
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2020-29557.yaml
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-2356.yaml
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-2780.yaml
+            - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2012-3152.yaml
       - name: use_default_templates
         type: boolean
         description: use nuclei's default templates to scan.
@@ -245,7 +246,6 @@ agents:
           - module: 'exploit/windows/http/desktopcentral_deserialization'
           - module: 'auxiliary/scanner/rdp/cve_2019_0708_bluekeep'
           - module: 'auxiliary/scanner/ssl/openssl_heartbleed'
-          - module: 'exploit/multi/http/oracle_reports_rce'
           - module: 'exploit/multi/misc/weblogic_deserialize_badattrval'
           - module: 'exploit/multi/http/php_fpm_rce'
           - module: 'exploit/multi/http/php_cgi_arg_injection'
