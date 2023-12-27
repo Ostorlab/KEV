@@ -168,7 +168,6 @@ agents:
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-42237.yaml
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2015-3035.yaml
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-40870.yaml
-            - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2019-1579.yaml
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-1498.yaml
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2018-10562.yaml
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-22986.yaml
@@ -230,13 +229,7 @@ agents:
         description: List of metasploit modules with their respective options
         value:
           - module: 'exploit/multi/http/atlassian_confluence_rce_cve_2023_22515'
-          # - module: 'exploit/linux/http/dlink_hnap_header_exec_noauth'
-          # - module: 'auxiliary/scanner/http/adobe_xml_inject'
-          # - module: 'exploit/linux/http/alcatel_omnipcx_mastercgi_exec'
-          # - module: 'exploit/multi/http/struts_code_exec_exception_delegator'
           - module: 'exploit/multi/veritas/beagent_sha_auth_rce'
-          # - module: 'auxiliary/dos/cisco/ios_telnet_rocem'
-          # - module: 'exploit/windows/dcerpc/cve_2021_1675_printnightmare'
           - module: 'exploit/multi/http/coldfusion_rds_auth_bypass'
           - module: 'exploit/windows/http/exchange_proxylogon_rce'
             options:
@@ -244,53 +237,29 @@ agents:
                 value: "administrator@localhost"
               - name: "CheckModule"
                 value: "auxiliary/scanner/http/exchange_proxylogon"
-          # - module: 'exploit/linux/http/zimbra_cpio_cve_2022_41352'
-          # - module: 'exploit/linux/http/ibm_drm_rce'
-          # - module: 'auxiliary/gather/mikrotik_winbox_fileread'
-          # - module: 'auxiliary/scanner/ike/cisco_ike_benigncertain'
           - module: 'exploit/freebsd/http/citrix_formssso_target_rce'
           - module: 'exploit/linux/http/multi_ncc_ping_exec'
-          # - module: 'exploit/unix/smtp/exim4_string_format'
           - module: 'exploit/linux/http/grandstream_ucm62xx_sendemail_rce'
           - module: 'exploit/linux/http/eyesofnetwork_autodiscovery_rce'
           - module: 'exploit/linux/misc/cisco_rv340_sslvpn'
-          # - module: 'exploit/unix/webapp/openview_connectednodes_exec'
-          # - module: 'exploit/linux/http/ibm_drm_rce'
-          # - module: 'exploit/multi/misc/ibm_tm1_unauth_rce'
-          # - module: 'exploit/multi/http/jboss_maindeployer'
-          # - module: 'auxiliary/dos/windows/http/http_sys_accept_encoding_dos_cve_2021_31166'
-          # - module: 'auxiliary/dos/http/ms15_034_ulonglongadd'
           - module: 'exploit/windows/iis/iis_webdav_scstoragepathfromurl'
           - module: 'exploit/windows/http/desktopcentral_deserialization'
           - module: 'auxiliary/scanner/rdp/cve_2019_0708_bluekeep'
-          # - module: 'exploit/linux/http/netgear_wnr2000_rce'
-          # - module: 'exploit/linux/misc/zyxel_ike_decoder_rce_cve_2023_28771'
-          # - module: 'exploit/unix/smtp/opensmtpd_mail_from_rce'
           - module: 'auxiliary/scanner/ssl/openssl_heartbleed'
           - module: 'exploit/multi/misc/weblogic_deserialize_badattrval'
           - module: 'exploit/multi/http/php_fpm_rce'
           - module: 'exploit/multi/http/php_cgi_arg_injection'
           - module: 'auxiliary/gather/qnap_lfi'
-          - module: 'exploit/multi/http/rails_dynamic_render_code_exec'
-          # - module: 'exploit/linux/misc/saltstack_salt_unauth_rce'
           - module: 'exploit/unix/http/quest_kace_systems_management_rce'
           - module: 'exploit/windows/smb/cve_2020_0796_smbghost'
-          # - module: 'exploit/linux/http/realtek_miniigd_upnp_exec_noauth'
-          #- module: 'auxiliary/scanner/http/jboss_vulnscan'
           - module: 'exploit/multi/http/jboss_seam_upload_exec'
           - module: 'exploit/linux/samba/is_known_pipename'
-          # - module: 'exploit/windows/http/telerik_rau_deserialization'
           - module: 'auxiliary/admin/http/tomcat_ghostcat'
           - module: 'exploit/linux/http/unraid_auth_bypass_exec'
-          # - module: 'exploit/windows/http/telerik_rau_deserialization'
-          # - module: 'exploit/multi/misc/weblogic_deserialize_rawobject'
           - module: 'exploit/multi/misc/weblogic_deserialize'
           - module: 'exploit/multi/iiop/cve_2023_21839_weblogic_rce'
-          # - module: 'exploit/multi/http/sugarcrm_webshell_cve_2023_22952'
           - module: 'exploit/unix/webapp/thinkphp_rce'
           - module: 'auxiliary/scanner/smb/smb_ms17_010'
-          # - module: 'exploit/linux/upnp/dlink_dir859_subscribe_exec'
           - module: 'auxiliary/gather/vmware_vcenter_vmdir_ldap'
-          # - module: 'exploit/linux/http/trueonline_p660hn_v1_rce'
           - module: 'exploit/windows/http/ws_ftp_rce_cve_2023_40044'
           - module: 'exploit/windows/http/manageengine_adselfservice_plus_cve_2022_28810'
