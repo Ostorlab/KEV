@@ -9,6 +9,7 @@ This project is dedicated to automate the detection of known exploited vulnerabi
 - [Known Exploited Vulnerabilities Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)  by CISA
 - [Tsunami](https://github.com/google/tsunami-security-scanner) by Google 
 - [Agent Asteroid](https://github.com/Ostorlab/agent_asteroid) by Ostorlab 
+- Bug Bounty Programs
 
 ## Requirements
 
@@ -704,7 +705,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2019-19781                                          | ✅           | Official Nuclei template.                               |
 | CVE-2019-19356                                          | ❌           | Not remotely exploitable/User interaction needed.       |
 | CVE-2019-18988                                          | ❌           | Not remotely exploitable/User interaction needed.       |
-| CVE-2019-18935                                          | ❌           | Metasploit module without a check/check_code.           |
+| CVE-2019-18935                                          | ✅           | Custom Nuclei template.                                 |
 | CVE-2019-18426                                          | ❌           | Not remotely exploitable/User interaction needed.       |
 | CVE-2019-18187                                          | ❌           | Not remotely exploitable/User interaction needed.       |
 | CVE-2019-17621                                          | ❌           | Metasploit module without a check/check_code.           |
