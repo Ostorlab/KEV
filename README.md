@@ -118,6 +118,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2023-46747                                          | ✅           | Official Nuclei template.                               |
 | CVE-2023-46604                                          | ✅           | Official Nuclei template.                               |
 | CVE-2023-44487                                          | ❌           | Not remotely exploitable/User interaction needed.       |
+| CVE-2023-43177                                          | ✅           | Official Nuclei template.                               |
 | CVE-2023-42824                                          | ❌           | Not remotely exploitable/User interaction needed.       |
 | CVE-2023-42793                                          | ✅           | Official Nuclei template and Tsunami scanner were used. |
 | CVE-2023-42917                                          | ❌           | Not enough technical details available.                 |
