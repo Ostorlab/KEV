@@ -1,12 +1,23 @@
 kind: AgentGroup
-description: This agent group will conduct various scans on different open ports to identify known exploited vulnerabilities on your target.
+description: This agent group will conduct scans on different open ports to identify known exploited vulnerabilities on your target.
 name: known_exploited_vulnerabilities_detectors
 agents:
+  # For Domain Name enumeration.
+  - key: agent/ostorlab/amass
+  # For Domain Name enumeration.
+  - key: agent/ostorlab/subfinder
+  # Runs default Tsunami checks.
+  - key: agent/ostorlab/tsunami
+  # For port scanning.
+  - key: agent/ostorlab/nmap
+  # Runs default Asteroid check.
+  - key: agent/ostorlab/asteroid
+  # Custom verified templates.
   - key: agent/ostorlab/nuclei
     args:
       - name: template_urls
         type: array
-        description: List of template urls to run. These will be fetched by the agent
+        description: List of template URLs to run. These will be fetched by the agent
           and passed to Nuclei.
         value:
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2021-27561.yaml
@@ -227,9 +238,7 @@ agents:
         type: boolean
         description: use nuclei's default templates to scan.
         value: false
-  - key: agent/ostorlab/tsunami
-  - key: agent/ostorlab/nmap
-  - key: agent/ostorlab/asteroid
+  # Metasploit with verified modules.
   - key: agent/ostorlab/metasploit
     args:
       - name: config
