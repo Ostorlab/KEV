@@ -118,7 +118,7 @@ ostorlab vulnz list -s <scan-id>
 To list the details of a vulnerability:
 
 ```shell
-Ostorlab vulnz describe -v <vuln-id>
+ostorlab vulnz describe -v <vuln-id>
 ```
 
 ## Current Coverage
