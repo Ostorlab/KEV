@@ -13,7 +13,7 @@ This project is dedicated to automate the detection of known exploited vulnerabi
 
 ## Requirements
 
-Python 3.7 or greater is required to install KEV via `pip`.
+Python 3.9 or greater is required to install KEV via `pip`.
 
 Docker is required to run scans locally. To install docker, please follow these
 [instructions](https://docs.docker.com/get-docker/).
