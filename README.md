@@ -27,6 +27,11 @@ pip install -U ostorlab
 
 ## Agent group definition
 
+This repo is an `Agent Group Definition` of the open-source [`ostorlab`](https://github.com/Ostorlab/ostorlab) scanner. An agent
+group is nothing but a config file that defines the list of components run during the scan.
+
+For a full tutorial on how to use Ostorlab CLI, check the following [tutorial](https://docs.ostorlab.co/tutorials/run-your-first-scan.html).
+
 By default, Ostorlab KEV agent group `agent_group.yaml` uses the following agents:
 
 - [Agent Nuclei](https://github.com/Ostorlab/agent_nuclei)
@@ -37,7 +42,9 @@ By default, Ostorlab KEV agent group `agent_group.yaml` uses the following agent
 
 ## Getting Started
 
-To perform your first scan, you have several options depending on your target. Here's how you can get started:
+To perform your first scan, you have several options depending on your target.
+
+Here's how you can get started:
 
 ### Scanning an IP Address
 
@@ -53,9 +60,9 @@ And you can scan more than one IP address by specifying them, separated by space
 ostorlab scan run --install -g agent_group.yaml ip 8.8.8.8 1.1.1.1 4.4.4.0/24
 ```
 
-### Scanning a Domain:
+### Scanning a Host:
 
-To scan a domain , simply run the following command:
+To scan a domain, simply run the following command:
 
 ```shell
 ostorlab scan run --install -g agent_group.yaml domain-name www.example.com
@@ -92,6 +99,27 @@ And then run it on the domain you would like to target:
 ostorlab scan run --install -g agent_group.yaml domain-name example.com
 ```
 
+### Scan Progress
+
+To see the scan progress, use the scan list command:
+
+```shell
+ostorlab scan list
+```
+
+### Access Results
+
+List findings in a particular scan:
+
+```shell
+ostorlab vulnz list -s <scan-id>
+```
+
+To list the details of a vulnerability:
+
+```shell
+Ostorlab vulnz describe -v <vuln-id>
+```
 
 ## Current Coverage
 
