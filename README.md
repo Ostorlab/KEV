@@ -175,7 +175,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2023-38203                                          |      ⏳      |                                                         |   2023-07-20   |
 | CVE-2023-3519                                           |      ✅      | Metasploit module.                                      |   2023-07-19   |
 | CVE-2023-29298                                          |      ✅      | Official Nuclei template.                               |   2023-07-12   |
-| CVE-2023-29300                                          |      ⏳      |                                                         |   2023-07-12   |
+| CVE-2023-29300                                          |      ✅      | Official Nuclei template.                               |   2023-07-12   |
 | CVE-2023-35311                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-07-11   |
 | CVE-2023-36874                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-07-11   |
 | CVE-2023-36884                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-07-11   |
@@ -206,7 +206,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2023-2356                                           |      ✅      | Official Nuclei template.                               |   2023-04-27   |
 | CVE-2023-29552                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-04-25   |
 | CVE-2023-28771                                          |      ❌      | Metasploit module without a check/check_code.           |   2023-04-24   |
-| CVE-2023-27524                                          |      ⏳      |                                                         |   2023-04-24   |
+| CVE-2023-27524                                          |      ✅      | Official Nuclei template.                               |   2023-04-24   |
 | CVE-2023-27350                                          |      ✅      | Official Nuclei template.                               |   2023-04-20   |
 | CVE-2023-2136                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-04-19   |
 | CVE-2023-2033                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-04-14   |
@@ -231,7 +231,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2019-8720                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-03-06   |
 | CVE-2023-23529                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-02-27   |
 | CVE-2022-47986                                          |      ✅      | Official Nuclei template.                               |   2023-02-17   |
-| CVE-2023-23752                                          |      ⏳      |                                                         |   2023-02-16   |
+| CVE-2023-23752                                          |      ✅      | Official Nuclei template.                               |   2023-02-16   |
 | CVE-2023-21823                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-02-14   |
 | CVE-2023-21715                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-02-14   |
 | CVE-2023-23376                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-02-14   |
