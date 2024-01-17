@@ -282,3 +282,4 @@ agents:
           - module: 'auxiliary/gather/vmware_vcenter_vmdir_ldap'
           - module: 'exploit/windows/http/ws_ftp_rce_cve_2023_40044'
           - module: 'exploit/windows/http/manageengine_adselfservice_plus_cve_2022_28810'
+          - module: 'exploit/linux/http/dlink_dsl2750b_exec_noauth'

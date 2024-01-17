@@ -296,7 +296,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2022-3723                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2022-11-01   |
 | CVE-2022-42827                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2022-11-01   |
 | CVE-2022-38181                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2022-10-25   |
-| CVE-2016-20017                                          |      ⏳      |                                                         |   2022-10-19   |
+| CVE-2016-20017                                          |      ✅      | Metasploit module.                                      |   2022-10-19   |
 | CVE-2022-40684                                          |      ✅      | Official Nuclei template.                               |   2022-10-18   |
 | CVE-2022-21587                                          |      ✅      | Official Nuclei template.                               |   2022-10-18   |
 | CVE-2022-41033                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2022-10-11   |
