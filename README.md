@@ -133,7 +133,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2023-46805                                          |      ⏳      |                                                         |   2024-01-12   |
 | CVE-2023-51467                                          |      ✅      | Custom Nuclei template by Ostorlab.                     |   2023-12-26   |
 | CVE-2023-7102                                           |      ✅      | Custom Nuclei template by Ostorlab.                     |   2023-12-24   |
-| CVE-2023-7101                                           |      ❌      | Remote exploitability very rare.                        |   2023-12-24   |
+| CVE-2023-7101                                           |      ⏳      | Pending.                                                |   2023-12-24   |
 | CVE-2023-7024                                           |      ❌      | User interaction needed.                                |   2023-12-21   |
 | CVE-2023-6553                                           |      ✅      | Custom Nuclei template by Ostorlab.                     |   2023-12-15   |
 | CVE-2023-47565                                          |      ✅      | Custom Nuclei template by Ostorlab.                     |   2023-12-08   |
