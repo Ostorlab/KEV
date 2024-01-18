@@ -101,6 +101,12 @@ And then run it on the domain you would like to target:
 ostorlab scan run --install -g agent_group.yaml domain-name example.com
 ```
 
+> [!TIP]
+> The default settings use public DNS servers which can affect enumeration results for very large domains due to rate limiting or caching.
+> Consider using a custom list of DNS resolvers.
+> To do so, set resolvers arguments in the `Amass` and `Subfinder` agents.
+
+
 ### Scan Progress
 
 To see the scan progress, use the scan list command:
