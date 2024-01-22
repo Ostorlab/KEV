@@ -208,7 +208,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2023-38180                                          |      ❌      | Exploit behavior not consistent.                        |   2023-08-08   |
 | CVE-2023-35081                                          |      ❌      | Requires authentication.                                |   2023-08-03   |
 | CVE-2023-37580                                          |      ✅      | Official Nuclei template.                               |   2023-07-31   |
-| CVE-2023-37450                                          |      ❌      | Target needs to open a specially crafted HTML page      |   2023-07-26   |
+| CVE-2023-37450                                          |      ❌      | Target needs to open a specially crafted HTML page.      |   2023-07-26   |
 | CVE-2023-38606                                          |      ❌      | Local attack vector.                                    |   2023-07-26   |
 | CVE-2023-35078                                          |      ✅      | Official Nuclei template.                               |   2023-07-25   |
 | CVE-2023-38646                                          |      ✅      | Covered by tsunami scanner.                             |   2023-07-21   |
