@@ -169,7 +169,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2023-46604                                          |      ✅      | Official Nuclei template.                               |   2023-10-27   |
 | CVE-2023-46747                                          |      ✅      | Official Nuclei template.                               |   2023-10-26   |
 | CVE-2023-46748                                          |      ❌      | Requires authentication.                                |   2023-10-26   |
-| CVE-2023-20273                                          |      ⏳      | Pending.                                                |   2023-10-25   |
+| CVE-2023-20273                                          |      ✅      | Metasploit module.                                      |   2023-10-25   |
 | CVE-2023-5631                                           |      ❌      | Requires user interaction.                              |   2023-10-18   |
 | CVE-2023-20198                                          |      ✅      | Official Nuclei template.                               |   2023-10-16   |
 | CVE-2023-44487                                          |      ❌      | Detection is not conclusive.                            |   2023-10-10   |
