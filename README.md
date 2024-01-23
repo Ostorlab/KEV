@@ -206,6 +206,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2023-36846                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid  |   2023-08-17   |
 | CVE-2023-36845                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid  |   2023-08-17   |
 | CVE-2023-36844                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid  |   2023-08-17   |
+| CVE-2023-35082                                          |      ✅      | Official Nuclei template.                               |   2023-08-15   |
 | CVE-2023-38180                                          |      ❌      | Exploit behavior not consistent.                        |   2023-08-08   |
 | CVE-2023-35081                                          |      ❌      | Requires authentication.                                |   2023-08-03   |
 | CVE-2023-37580                                          |      ✅      | Official Nuclei template.                               |   2023-07-31   |
