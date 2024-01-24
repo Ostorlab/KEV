@@ -239,6 +239,7 @@ agents:
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-7028.yaml
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-35082.yaml
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2023-22527.yaml
+            - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2024-0204.yaml
       - name: use_default_templates
         type: boolean
         description: use nuclei's default templates to scan.
@@ -286,4 +287,3 @@ agents:
           - module: 'exploit/windows/http/ws_ftp_rce_cve_2023_40044'
           - module: 'exploit/windows/http/manageengine_adselfservice_plus_cve_2022_28810'
           - module: 'exploit/linux/http/dlink_dsl2750b_exec_noauth'
-          - module: 'exploit/linux/misc/cisco_ios_xe_rce'

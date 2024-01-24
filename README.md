@@ -135,10 +135,12 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 
 | CVE ID                                                  | Implemented | Detail                                                  | Published Date |
 |:--------------------------------------------------------|:-----------:|:--------------------------------------------------------|:--------------:|
+| CVE-2024-0204                                           |      ✅      | Official Nuclei template.                               |   2024-01-22   |
 | CVE-2024-22233                                          |      ❌      | Not enough technical details available.                 |   2024-01-22   |
 | CVE-2023-6548                                           |      ❌      | Requires authentication.                                |   2024-01-17   |
 | CVE-2023-6549                                           |      ❌      | Not enough technical details available.                 |   2024-01-17   |
 | CVE-2024-0519                                           |      ❌      | Target needs to open a specially crafted HTML page.     |   2024-01-17   |
+| CVE-2018-15133                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-01-16   |
 | CVE-2023-7028                                           |      ✅      | Official Nuclei template.                               |   2024-01-12   |
 | CVE-2018-15133                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-01-16   |
 | CVE-2023-22527                                          |      ✅      | Nuclei template (tweaked by Ostorlab).                  |   2024-01-16   |
@@ -168,69 +170,69 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2023-22518                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid  |   2023-10-31   |
 | CVE-2023-46604                                          |      ✅      | Official Nuclei template.                               |   2023-10-27   |
 | CVE-2023-46747                                          |      ✅      | Official Nuclei template.                               |   2023-10-26   |
-| CVE-2023-46748                                          |      ❌      | Requires authentication.                                |   2023-10-26   |
-| CVE-2023-20273                                          |      ✅      | Metasploit module.                                      |   2023-10-25   |
-| CVE-2023-5631                                           |      ❌      | Requires user interaction.                              |   2023-10-18   |
+| CVE-2023-46748                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-10-26   |
+| CVE-2023-20273                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-10-25   |
+| CVE-2023-5631                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-10-18   |
 | CVE-2023-20198                                          |      ✅      | Official Nuclei template.                               |   2023-10-16   |
-| CVE-2023-44487                                          |      ❌      | Detection is not conclusive.                            |   2023-10-10   |
+| CVE-2023-44487                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-10-10   |
 | CVE-2023-4966                                           |      ✅      | Custom Nuclei template by Ostorlab.                     |   2023-10-10   |
-| CVE-2023-36563                                          |      ❌      | Local attack vector.                                    |   2023-10-10   |
-| CVE-2023-36584                                          |      ❌      | Local attack vector.                                    |   2023-10-10   |
-| CVE-2023-41763                                          |      ❌      | Local attack vector.                                    |   2023-10-10   |
-| CVE-2023-42824                                          |      ❌      | Local attack vector.                                    |   2023-10-04   |
+| CVE-2023-36563                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-10-10   |
+| CVE-2023-36584                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-10-10   |
+| CVE-2023-41763                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-10-10   |
+| CVE-2023-42824                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-10-04   |
 | CVE-2023-22515                                          |      ✅      | Metasploit module.                                      |   2023-10-04   |
-| CVE-2023-4911                                           |      ❌      | Local exploit.                                          |   2023-10-03   |
-| CVE-2023-4211                                           |      ❌      | Local attack vector.                                    |   2023-10-01   |
-| CVE-2023-5217                                           |      ❌      | Target needs to open a specially crafted HTML page.     |   2023-09-28   |
+| CVE-2023-4911                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-10-03   |
+| CVE-2023-4211                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-10-01   |
+| CVE-2023-5217                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-09-28   |
 | CVE-2023-36851                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid  |   2023-09-27   |
-| CVE-2023-20109                                          |      ❌      | Requires authentication.                                |   2023-09-27   |
+| CVE-2023-20109                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-09-27   |
 | CVE-2023-40044                                          |      ✅      | Metasploit module.                                      |   2023-09-27   |
-| CVE-2023-41991                                          |      ❌      | Local attack vector.                                    |   2023-09-21   |
-| CVE-2023-41993                                          |      ❌      | Target needs to open a specially crafted HTML page.     |   2023-09-21   |
-| CVE-2023-41992                                          |      ❌      | Local attack vector.                                    |   2023-09-21   |
-| CVE-2023-41179                                          |      ❌      | Requires authentication.                                |   2023-09-19   |
+| CVE-2023-41991                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-09-21   |
+| CVE-2023-41993                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-09-21   |
+| CVE-2023-41992                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-09-21   |
+| CVE-2023-41179                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-09-19   |
 | CVE-2023-42793                                          |      ✅      | Official Nuclei template and Tsunami scanner were used. |   2023-09-19   |
 | CVE-2023-38205                                          |      ✅      | Official Nuclei template.                               |   2023-09-14   |
-| CVE-2023-26369                                          |      ❌      | Target needs to open a malicious file.                  |   2023-09-13   |
-| CVE-2023-36802                                          |      ❌      | Local attack vector.                                    |   2023-09-12   |
-| CVE-2023-36761                                          |      ❌      | Local attack vector.                                    |   2023-09-12   |
-| CVE-2023-4863                                           |      ❌      | Target needs to open a specially crafted HTML page.     |   2023-09-12   |
-| CVE-2023-35674                                          |      ❌      | Local attack vector.                                    |   2023-09-11   |
-| CVE-2023-41990                                          |      ❌      | Requires a malicious font file.                         |   2023-09-11   |
-| CVE-2023-41064                                          |      ❌      | Requires a malicious image file.                        |   2023-09-07   |
-| CVE-2023-41061                                          |      ❌      | Requires a malicious attachment file.                   |   2023-09-07   |
-| CVE-2023-20269                                          |      ❌      | Requires bruteforce.                                    |   2023-09-06   |
+| CVE-2023-26369                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-09-13   |
+| CVE-2023-36802                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-09-12   |
+| CVE-2023-36761                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-09-12   |
+| CVE-2023-4863                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-09-12   |
+| CVE-2023-35674                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-09-11   |
+| CVE-2023-41990                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-09-11   |
+| CVE-2023-41064                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-09-07   |
+| CVE-2023-41061                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-09-07   |
+| CVE-2023-20269                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-09-06   |
 | CVE-2023-41265                                          |      ✅      | Same Nuclei template as CVE-2023-41266.                 |   2023-08-29   |
 | CVE-2023-41266                                          |      ✅      | Official Nuclei template.                               |   2023-08-29   |
-| CVE-2023-38831                                          |      ❌      | Requires a malicious archive file.                      |   2023-08-23   |
+| CVE-2023-38831                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-08-23   |
 | CVE-2023-38035                                          |      ✅      | Official Nuclei template.                               |   2023-08-21   |
 | CVE-2023-36847                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid  |   2023-08-17   |
 | CVE-2023-36846                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid  |   2023-08-17   |
 | CVE-2023-36845                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid  |   2023-08-17   |
 | CVE-2023-36844                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid  |   2023-08-17   |
 | CVE-2023-35082                                          |      ✅      | Official Nuclei template.                               |   2023-08-15   |
-| CVE-2023-38180                                          |      ❌      | Exploit behavior not consistent.                        |   2023-08-08   |
-| CVE-2023-35081                                          |      ❌      | Requires authentication.                                |   2023-08-03   |
+| CVE-2023-38180                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-08-08   |
+| CVE-2023-35081                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-08-03   |
 | CVE-2023-37580                                          |      ✅      | Official Nuclei template.                               |   2023-07-31   |
-| CVE-2023-37450                                          |      ❌      | Target needs to open a specially crafted HTML page.     |   2023-07-26   |
-| CVE-2023-38606                                          |      ❌      | Local attack vector.                                    |   2023-07-26   |
+| CVE-2023-37450                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-07-26   |
+| CVE-2023-38606                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-07-26   |
 | CVE-2023-35078                                          |      ✅      | Official Nuclei template.                               |   2023-07-25   |
 | CVE-2023-38646                                          |      ✅      | Covered by tsunami scanner.                             |   2023-07-21   |
 | CVE-2023-38203                                          |      ⏳      |                                                         |   2023-07-20   |
 | CVE-2023-3519                                           |      ✅      | Metasploit module.                                      |   2023-07-19   |
 | CVE-2023-29298                                          |      ✅      | Official Nuclei template.                               |   2023-07-12   |
 | CVE-2023-29300                                          |      ✅      | Official Nuclei template.                               |   2023-07-12   |
-| CVE-2023-35311                                          |      ❌      | Requires user interaction.                              |   2023-07-11   |
-| CVE-2023-36874                                          |      ❌      | Local attack vector.                                    |   2023-07-11   |
-| CVE-2023-36884                                          |      ❌      | Target needs to open a specially crafted HTML page.     |   2023-07-11   |
-| CVE-2023-32049                                          |      ❌      | Requires user interaction.                              |   2023-07-11   |
-| CVE-2023-32046                                          |      ❌      | Local attack vector.                                    |   2023-07-11   |
+| CVE-2023-35311                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-07-11   |
+| CVE-2023-36874                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-07-11   |
+| CVE-2023-36884                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-07-11   |
+| CVE-2023-32049                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-07-11   |
+| CVE-2023-32046                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-07-11   |
 | CVE-2023-24489                                          |      ✅      | Official Nuclei template.                               |   2023-07-10   |
-| CVE-2023-28204                                          |      ❌      | Target needs to open a specially crafted HTML page.     |   2023-06-23   |
-| CVE-2023-32435                                          |      ❌      | Target needs to open a specially crafted HTML page.     |   2023-06-23   |
-| CVE-2023-32409                                          |      ❌      | Local attack vector.                                    |   2023-06-23   |
-| CVE-2023-32439                                          |      ❌      | Target needs to open a specially crafted HTML page.     |   2023-06-23   |
-| CVE-2023-32434                                          |      ❌      | Local attack vector.                                    |   2023-06-23   |
+| CVE-2023-28204                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-06-23   |
+| CVE-2023-32435                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-06-23   |
+| CVE-2023-32409                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-06-23   |
+| CVE-2023-32439                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-06-23   |
+| CVE-2023-32434                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-06-23   |
 | CVE-2023-32373                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-06-23   |
 | CVE-2023-27992                                          |      ❌      | Missing public exploit.                                 |   2023-06-19   |
 | CVE-2023-27997                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid  |   2023-06-13   |
