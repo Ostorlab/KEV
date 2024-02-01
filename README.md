@@ -135,6 +135,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 
 | CVE ID                                                  | Implemented | Detail                                                  | Published Date |
 |:--------------------------------------------------------|:-----------:|:--------------------------------------------------------|:--------------:|
+| CVE-2024-21733                                          |      ✅      | Version check: included in Agent Asteroid.              |   2024-01-29   |
 | CVE-2024-21620                                          |      ❌      | Not enough technical details available.                 |   2024-01-25   |
 | CVE-2024-21619                                          |      ❌      | Not enough technical details available.                 |   2024-01-25   |
 | CVE-2024-23897                                          |      ✅      | Official Nuclei template.                               |   2024-01-24   |
