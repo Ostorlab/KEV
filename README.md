@@ -135,7 +135,9 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 
 | CVE ID                                                  | Implemented | Detail                                                  | Published Date |
 |:--------------------------------------------------------|:-----------:|:--------------------------------------------------------|:--------------:|
+| CVE-2024-21762                                          |      ❌      | Not enough technical details available.                 |   2024-02-09   |
 | CVE-2024-22024                                          |      ✅      | Official Nuclei template.                               |   2024-02-08   |
+| CVE-2024-21893                                          |      ⏳      |                                                         |   2024-01-31   |
 | CVE-2024-21733                                          |      ✅      | Version check: included in Agent Asteroid.              |   2024-01-29   |
 | CVE-2024-21620                                          |      ❌      | Not enough technical details available.                 |   2024-01-25   |
 | CVE-2024-21619                                          |      ❌      | Not enough technical details available.                 |   2024-01-25   |
@@ -150,6 +152,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2023-22527                                          |      ✅      | Nuclei template (tweaked by Ostorlab).                  |   2024-01-16   |
 | CVE-2023-46805                                          |      ✅      | Official Nuclei template.                               |   2024-01-12   |
 | CVE-2024-21887                                          |      ✅      | Official Nuclei template.                               |   2024-01-12   |
+| CVE-2022-48618                                          |      ❌      | Not remotely exploitable.                               |   2024-01-09   |
 | CVE-2023-51467                                          |      ✅      | Custom Nuclei template by Ostorlab.                     |   2023-12-26   |
 | CVE-2023-7102                                           |      ✅      | Custom Nuclei template by Ostorlab.                     |   2023-12-24   |
 | CVE-2023-7101                                           |      ❌      | Context dependent library vulnerability.                |   2023-12-24   |
@@ -191,6 +194,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2023-36851                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid  |   2023-09-27   |
 | CVE-2023-20109                                          |      ❌      | Requires authentication.                                |   2023-09-27   |
 | CVE-2023-40044                                          |      ✅      | Metasploit module.                                      |   2023-09-27   |
+| CVE-2023-43770                                          |      ⏳      |                                                         |   2023-09-22   |
 | CVE-2023-41991                                          |      ❌      | Local attack vector.                                    |   2023-09-21   |
 | CVE-2023-41993                                          |      ❌      | Target needs to open a specially crafted HTML page.     |   2023-09-21   |
 | CVE-2023-41992                                          |      ❌      | Local attack vector.                                    |   2023-09-21   |
@@ -206,6 +210,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2023-41064                                          |      ❌      | Requires a malicious image file.                        |   2023-09-07   |
 | CVE-2023-41061                                          |      ❌      | Requires a malicious attachment file.                   |   2023-09-07   |
 | CVE-2023-20269                                          |      ❌      | Requires bruteforce.                                    |   2023-09-06   |
+| CVE-2023-4762                                           |      ❌      | Requires user interaction.                              |   2023-09-05   |
 | CVE-2023-41265                                          |      ✅      | Same Nuclei template as CVE-2023-41266.                 |   2023-08-29   |
 | CVE-2023-41266                                          |      ✅      | Official Nuclei template.                               |   2023-08-29   |
 | CVE-2023-38831                                          |      ❌      | Requires a malicious archive file.                      |   2023-08-23   |
