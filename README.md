@@ -61,6 +61,7 @@ And you can scan more than one IP address by specifying them, separated by space
 ```shell
 ostorlab scan run --install -g agent_group.yaml ip 8.8.8.8 1.1.1.1 4.4.4.0/24
 ```
+[![asciicast](https://asciinema.org/a/640606.svg)](https://asciinema.org/a/640606)
 
 ### Scanning a Host:
 
@@ -72,7 +73,7 @@ ostorlab scan run --install -g agent_group.yaml domain-name www.example.com
 
 This command will download and install the required agents specified in the YAML file and perform the scan on the
 domain `www.example.com`.
-
+[![asciicast](https://asciinema.org/a/640627.svg)](https://asciinema.org/a/640627)
 ### Scanning a Link:
 
 To scan a link, simply run the following command:
@@ -82,7 +83,7 @@ ostorlab scan run --install -g agent_group.yaml link --url https://www.example.c
 ```
 
 This command will download and install the required agents specified in the YAML file and perform the scan on the link `https://www.example.com` using the specified method.
-
+[![asciicast](https://asciinema.org/a/640629.svg)](https://asciinema.org/a/640629)
 ### Targeting all subdomains
 
 To improve the scope of detection, it's possible to enumerate and target subdomains of a given asset by adding `subfinder` and/or `dnsx` to the agent group definition `agent_group.yaml`.
@@ -128,7 +129,7 @@ To list the details of a vulnerability:
 ```shell
 ostorlab vulnz describe -v <vuln-id>
 ```
-
+[![asciicast](https://asciinema.org/a/640566.svg)](https://asciinema.org/a/640566)
 ## Current Coverage
 
 For the moment, we are currently focused on the CISA KEV Database and Google Tsunami.
