@@ -32,7 +32,7 @@ pip install -U ostorlab
 This repo is an `Agent Group Definition` of the open-source [`ostorlab`](https://github.com/Ostorlab/ostorlab) scanner. An agent
 group is nothing but a config file that defines the list of components to run during the scan.
 
-For a full tutorial on how to use Ostorlab CLI, check the following [tutorial](https://docs.ostorlab.co/tutorials/run-your-first-scan.html).
+For a full tutorial on how to use Ostorlab CLI, check the following [tutorial](https://oxo.ostorlab.co/tutorials).
 
 By default, Ostorlab KEV agent group `agent_group.yaml` uses the following agents:
 
