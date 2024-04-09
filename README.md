@@ -108,6 +108,19 @@ ostorlab scan run --install -g agent_group.yaml domain-name example.com
 > To do so, set resolvers arguments in the `Amass` and `Subfinder` agents.
 
 
+### Docker Image
+
+To run `oxo` in a container use the publically available image and run the following command:  
+
+```shell
+docker run -v /var/run/docker.sock:/var/run/docker.sock -v ./agent_group.yaml:/agent_group.yaml  ostorlab/oxo:latest scan run --install -g /agent_group.yaml link --url https://www.example.com --method GET
+```
+
+Notes:
+* The command starts directly with: `scan run`, this is because the `ostorlab/oxo` image has `oxo` as an `entrypoint`.
+* It is important to mount the docker socket so `oxo` can create the agent in the host machine.
+
+
 ### Scan Progress
 
 To see the scan progress, use the scan list command:
