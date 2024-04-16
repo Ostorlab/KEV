@@ -1,7 +1,5 @@
 # Known Exploited Vulnerabilities (KEV) Detector
 
-![Logo](images/logo.png)
-
 ## Introduction
 
 This project is dedicated to automate the detection of known exploited vulnerabilities through a single command, it includes exploits for vulnerabilities from:
