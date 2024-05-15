@@ -200,7 +200,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2023-7101                                           |      ❌      | Context dependent library vulnerability.                |   2023-12-24   |
 | CVE-2023-7024                                           |      ❌      | User interaction needed.                                |   2023-12-21   |
 | CVE-2023-6553                                           |      ✅      | Custom Nuclei template by Ostorlab.                     |   2023-12-15   |
-| CVE-2023-47565                                          |      ✅      | Custom Nuclei template by Ostorlab.                     |   2023-12-08   |
+| CVE-2023-47565                                          |      ✅      | Official Nuclei template.                               |   2023-12-08   |
 | CVE-2023-49897                                          |      ⏳      |                                                         |   2023-12-06   |
 | CVE-2023-6448                                           |      ❌      | Not enough technical details available.                 |   2023-12-05   |
 | CVE-2023-49070                                          |      ✅      | Official Nuclei template.                               |   2023-12-05   |
