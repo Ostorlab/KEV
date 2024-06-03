@@ -147,6 +147,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 
 | CVE ID                                                  | Implemented | Detail                                                  | Published Date |
 |:--------------------------------------------------------|:-----------:|:--------------------------------------------------------|:--------------:|
+| CVE-2024-24919                                          |      ✅      | Official Nuclei template.                               |   2024-05-28   |
 | CVE-2024-4985                                           |      ❌      | Not enough technical details available.                 |   2024-05-20   |
 | CVE-2024-4956                                           |      ✅      | Official Nuclei template.                               |   2024-05-16   |
 | CVE-2024-29895                                          |      ✅      | Official Nuclei template.                               |   2024-05-14   |
@@ -184,6 +185,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2023-43770                                          |      ✅      | Custom Check by Ostorlab: included in Agent Asteroid.   |   2024-02-12   |
 | CVE-2024-21762                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-02-09   |
 | CVE-2024-22024                                          |      ✅      | Official Nuclei template.                               |   2024-02-08   |
+| CVE-2024-23917                                          |      ✅      | Official Nuclei template.                               |   2024-02-06   |
 | CVE-2024-21893                                          |      ✅      | Official Nuclei template.                               |   2024-01-31   |
 | CVE-2024-21733                                          |      ✅      | Version check: included in Agent Asteroid.              |   2024-01-29   |
 | CVE-2024-21620                                          |      ❌      | Not enough technical details available.                 |   2024-01-25   |
