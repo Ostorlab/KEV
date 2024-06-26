@@ -165,7 +165,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2024-26331                                          |      ✅      | Official Nuclei template.                               |   2024-04-13   |
 | CVE-2024-3400                                           |      ✅      | Official Nuclei template.                               |   2024-04-12   |
 | CVE-2024-29269                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-04-10   |
-| CVE-2024-31461                                          |      ⏳      | Pending.                                                |   2024-04-10   |
+| CVE-2024-31461                                          |      ❌      | Requires authentication & integration with Jira.        |   2024-04-10   |
 | CVE-2024-31849                                          |      ✅      | Official Nuclei template.                               |   2024-04-05   |
 | CVE-2024-3273                                           |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-04-03   |
 | CVE-2024-2879                                           |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-04-03   |
