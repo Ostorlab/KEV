@@ -93,7 +93,7 @@ agent:
   - key: agent/ostorlab/dnsx
   ...
 ```
-
+https://www.google.com/search?q=kv+ostrorlab&sca_esv=378ea24661acfe2a&sca_upv=1&ei=mraHZq7KLbCRkdUP27yjsA0&ved=0ahUKEwiu_8qQxY-HAxWwSKQEHVveCNYQ4dUDCA8&uact=5&oq=kv+ostrorlab&gs_lp=Egxnd3Mtd2l6LXNlcnAiDGt2IG9zdHJvcmxhYjIFECEYoAEyBRAhGKABMgUQIRigAUiAIVAwWI8gcAF4AJABAJgBvQGgAZEKqgEDMC45uAEDyAEA-AEBmAIKoAKeC8ICDRAAGIAEGLADGEMYigXCAggQABiABBiwA8ICDhAuGIAEGLADGMgD2AEBwgIUEC4YgAQYsAMYxwEYyAMYrwHYAQHCAgUQLhiABMICBRAAGIAEwgIKEAAYgAQYQxiKBcICEBAuGIAEGEMYxwEYigUYrwHCAh0QLhiABBiXBRjcBBjeBBjgBBj0AxjxAxj1A9gBAsICCxAuGIAEGMcBGK8BwgIKEC4YgAQY1AIYCsICChAuGIAEGEMYigXCAgcQABiABBgKwgIZEC4YgAQY1AIYChiXBRjcBBjeBBjgBNgBAsICBhAAGBYYHsICCBAAGBYYChgewgILEAAYgAQYhgMYigXCAggQABiABBiiBMICCBAAGKIEGIkFwgIHEAAYgAQYDcICCBAAGAgYDRgewgIHEC4YgAQYDcICJRAuGIAEGA0YlwUY3AQY3gQY4AQY9AMY8QMY9QMY9gMY9wPYAQKYAwCIBgGQBhS6BgYIARABGAi6BgYIAhABGBSSBwUxLjguMaAHqk4&sclient=gws-wiz-serp
 And then run it on the domain you would like to target:
 
 ```shell
@@ -147,6 +147,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 
 | CVE ID                                                  | Implemented | Detail                                                  | Published Date |
 |:--------------------------------------------------------|:-----------:|:--------------------------------------------------------|:--------------:|
+| CVE-2024-2194                                           |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid  |   2024-03-13   |
 | CVE-2024-34470                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid  |   2024-05-29   |
 | CVE-2022-24816                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-06-24   |
 | CVE-2024-4577                                           |      ✅      | Official Nuclei template.                               |   2024-06-11   |
