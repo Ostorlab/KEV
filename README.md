@@ -1314,6 +1314,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2004-1464                                           |      ❌      | Missing public exploit.                                 |   2004-12-31   |
 | CVE-2004-0210                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2004-08-06   |
 | CVE-2002-0367                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2002-06-25   |
+| Selenium exposure.                                      |      ✅      | Official Nuclei template.                               |       -        |
 | Generic Path Traversal vulnerabilities.                 |      ✅      | Tsunami Detector.                                       |       -        |
 | Apache NiFi API Exposed UI.                             |      ✅      | Tsunami Detector.                                       |       -        |
 | Exposed Argo Workflows instances.                       |      ✅      | Tsunami Detector.                                       |       -        |
