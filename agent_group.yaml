@@ -274,6 +274,7 @@ agents:
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2024-29824.yaml
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2024-4885.yaml
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/selenium-exposure.yaml
+            - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/unauth-selenium-grid-console.yaml
       - name: use_default_templates
         type: boolean
         description: use nuclei's default templates to scan.
