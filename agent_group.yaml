@@ -284,6 +284,7 @@ agents:
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2024-20440.yaml
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2024-20439.yaml
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2024-6670.yaml
+            - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2024-45519.yaml
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2024-47176.yaml
       - name: use_default_templates
         type: boolean
