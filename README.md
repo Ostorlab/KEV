@@ -779,6 +779,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2020-9377                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2020-07-09   |
 | CVE-2020-15505                                          |      ✅      | Official Nuclei template.                               |   2020-07-06   |
 | CVE-2020-5902                                           |      ✅      | Official Nuclei template.                               |   2020-07-01   |
+| CVE-2020-15415                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2020-06-30   |
 | CVE-2020-2021                                           |      ❌      | Missing public exploit.                                 |   2020-06-29   |
 | CVE-2020-11899                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2020-06-17   |
 | CVE-2020-9819                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2020-06-09   |
