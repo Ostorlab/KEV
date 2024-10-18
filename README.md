@@ -147,6 +147,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 
 | CVE ID                                                  | Implemented | Detail                                                  | Published Date |
 |:--------------------------------------------------------|:-----------:|:--------------------------------------------------------|:--------------:|
+| JETPACK_DATA_EXPOSURE                                   |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-10-15   |
 | CVE-2024-9487                                           |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-10-10   |
 | CVE-2024-47176                                          |      ✅      | Official Nuclei template.                               |   2024-09-26   |
 | CVE-2024-8963                                           |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-09-19   |
