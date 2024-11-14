@@ -896,6 +896,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2019-18187                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2019-10-28   |
 | CVE-2019-11043                                          |      ✅      | Metasploit module.                                      |   2019-10-28   |
 | CVE-2019-3010                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2019-10-16   |
+| CVE-2019-16278                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2019-10-14   |
 | CVE-2019-2215                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2019-10-11   |
 | CVE-2019-1322                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2019-10-10   |
 | CVE-2019-1315                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2019-10-10   |
