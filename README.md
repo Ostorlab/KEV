@@ -147,6 +147,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 
 | CVE ID                                                  | Implemented | Detail                                                  | Published Date |
 |:--------------------------------------------------------|:-----------:|:--------------------------------------------------------|:--------------:|
+| CVE-2024-8672                                           |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-11-28   |
 | CVE-2024-10781                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-11-26   |
 | CVE-2024-10542                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-11-26   |
 | CVE-2024-11680                                          |      ✅      | Official Nuclei template.                               |   2024-11-26   |
@@ -394,6 +395,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2023-26359                                          |      ✅      | Same nuclei template as CVE-2023-26360                  |   2023-03-23   |
 | CVE-2023-28434                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-03-22   |
 | CVE-2023-28432                                          |      ✅      | Official Nuclei template.                               |   2023-03-22   |
+| CVE-2023-28461                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2023-03-15   |
 | CVE-2023-25280                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid  |   2023-03-15   |
 | CVE-2023-1389                                           |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid  |   2023-03-15   |
 | CVE-2023-24880                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-03-14   |
