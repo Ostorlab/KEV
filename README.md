@@ -108,7 +108,7 @@ ostorlab scan run --install -g agent_group.yaml domain-name example.com
 
 ### Docker Image
 
-To run `oxo` in a container, you may use the publically available image and run the following command:  
+To run `oxo` in a container, you may use the publicly available image and run the following command:  
 
 ```shell
 docker run -v /var/run/docker.sock:/var/run/docker.sock -v ./agent_group.yaml:/agent_group.yaml  ostorlab/oxo:latest scan run --install -g /agent_group.yaml link --url https://www.example.com --method GET
@@ -937,7 +937,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2019-0193                                           |      ✅      | Official Nuclei template.                               |   2019-08-01   |
 | CVE-2019-11707                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2019-07-23   |
 | CVE-2019-11708                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2019-07-23   |
-| CVE-2019-1579                                           |      ❌      | Exploit is version dependant.                           |   2019-07-19   |
+| CVE-2019-1579                                           |      ❌      | Exploit is version dependent.                           |   2019-07-19   |
 | CVE-2019-13272                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2019-07-17   |
 | CVE-2019-12991                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid  |   2019-07-16   |
 | CVE-2019-12989                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid  |   2019-07-16   |
