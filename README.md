@@ -108,7 +108,7 @@ ostorlab scan run --install -g agent_group.yaml domain-name example.com
 
 ### Docker Image
 
-To run `oxo` in a container, you may use the publically available image and run the following command:  
+To run `oxo` in a container, you may use the publicaly available image and run the following command:  
 
 ```shell
 docker run -v /var/run/docker.sock:/var/run/docker.sock -v ./agent_group.yaml:/agent_group.yaml  ostorlab/oxo:latest scan run --install -g /agent_group.yaml link --url https://www.example.com --method GET
