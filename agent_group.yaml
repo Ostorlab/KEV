@@ -312,6 +312,7 @@ agents:
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2024-43919.yaml
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2024-6782.yaml
             - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2024-52875.yaml
+            - https://raw.githubusercontent.com/Ostorlab/known_exploited_vulnerbilities_detectors/main/nuclei/CVE-2024-12987.yaml
       - name: use_default_templates
         type: boolean
         description: use nuclei's default templates to scan.
