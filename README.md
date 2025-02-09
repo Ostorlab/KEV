@@ -262,6 +262,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2023-48788                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-03-25   |
 | CVE-2021-44529                                          |      ✅      | Official Nuclei template.                               |   2024-03-25   |
 | CVE-2019-7256                                           |      ✅      | Custom Nuclei template by Ostorlab.                     |   2024-03-25   |
+| CVE-2024-29059                                          |      ✅      | Custom Nuclei template by Ostorlab.                     |   2024-03-22   |
 | CVE-2024-27956                                          |      ✅      | Official Nuclei template (modified by Ostorlab).        |   2024-03-21   |
 | CVE-2024-23334                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-03-19   |
 | CVE-2024-20767                                          |      ✅      | Official Nuclei template (modified by Ostorlab).        |   2024-03-18   |
@@ -1036,6 +1037,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2018-17480                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2018-12-11   |
 | CVE-2018-20062                                          |      ✅      | Metasploit module.                                      |   2018-12-11   |
 | CVE-2018-1000861                                        |      ✅      | Official Nuclei template.                               |   2018-12-10   |
+| CVE-2018-19410                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2018-11-21   |
 | CVE-2018-17463                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2018-11-14   |
 | CVE-2018-6065                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2018-11-14   |
 | CVE-2018-8589                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2018-11-13   |
