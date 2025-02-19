@@ -455,6 +455,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2023-21674                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-01-10   |
 | CVE-2022-44877                                          |      ✅      | Official Nuclei template.                               |   2023-01-05   |
 | CVE-2022-42475                                          |      ❌      | Memory corruption and needs a ROP chain.                |   2023-01-02   |
+| CVE-2022-47945                                          |      ✅      | Official Nuclei template.                               |   2022-12-23   |
 | CVE-2022-26485                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2022-12-22   |
 | CVE-2022-26486                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2022-12-22   |
 | CVE-2022-42856                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2022-12-15   |
