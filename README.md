@@ -153,6 +153,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2025-29891                                          |      ✅      | Custom Nuclei template.                                 |   2025-03-12   |
 | CVE-2025-24813                                          |      ✅      | Custom Nuclei template.                                 |   2025-03-10   |
 | CVE-2025-27636                                          |      ✅      | Custom Nuclei template.                                 |   2025-03-09   |
+| CVE-2025-22457                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2025-03-04   |
 | CVE-2024-48248                                          |      ✅      | Official Nuclei template.                               |   2025-03-04   |
 | CVE-2025-27364                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2025-02-24   |
 | CVE-2025-0108                                           |      ✅      | Custom Nuclei template.                                 |   2025-02-12   |
@@ -1168,6 +1169,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2017-0222                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2017-05-12   |
 | CVE-2017-0213                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2017-05-12   |
 | CVE-2017-5689                                           |      ✅      | Official Nuclei template.                               |   2017-05-02   |
+| CVE-2017-3066                                           |      ❌      | Custom Exploit by Ostorlab: included in Agent Asteroid  |   2017-04-27   |
 | CVE-2017-8291                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2017-04-26   |
 | CVE-2017-5030                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2017-04-24   |
 | CVE-2016-1555                                           |      ✅      | Official Nuclei template.                               |   2017-04-21   |
