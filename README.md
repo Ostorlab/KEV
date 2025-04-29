@@ -149,6 +149,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 |:--------------------------------------------------------|:-----------:|:--------------------------------------------------------|:--------------:|
 | CVE-2025-28367                                          |      ✅      | Official Nuclei template.                               |   2025-04-21   | 
 | CVE-2025-32433                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2025-04-16   | 
+| CVE-2025-2636                                           |      ✅      | Custom Nuclei template.                                 |   2025-04-11   | 
 | CVE-2025-31161                                          |      ✅      | Official Nuclei template.                               |   2025-03-26   | 
 | CVE-2025-1974                                           |      ✅      | Official Nuclei template.                               |   2025-03-24   |
 | CVE-2025-29927                                          |      ✅      | Official Nuclei template.                               |   2025-03-21   |
@@ -997,6 +998,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2018-13382                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid  |   2019-06-04   |
 | CVE-2018-13379                                          |      ✅      | Official Nuclei template.                               |   2019-06-04   |
 | CVE-2019-11580                                          |      ✅      | Official Nuclei template.                               |   2019-06-03   |
+| CVE-2019-9874                                           |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid  |   2019-05-31   |
 | CVE-2018-13383                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2019-05-29   |
 | CVE-2019-9670                                           |      ✅      | Official Nuclei template.                               |   2019-05-29   |
 | CVE-2018-7841                                           |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid  |   2019-05-22   |
