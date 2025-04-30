@@ -1148,6 +1148,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2017-6327                                           |      ❌      | Authentication Required .                               |   2017-08-11   |
 | CVE-2015-2291                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2017-08-09   |
 | CVE-2017-6663                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2017-08-07   |
+| CVE-2017-12637                                          |      ✅      | Official Nuclei template.                               |   2017-08-07   |
 | CVE-2017-6316                                           |      ❌      | Missing public exploit.                                 |   2017-07-20   |
 | CVE-2017-9822                                           |      ✅      | Official Nuclei template.                               |   2017-07-20   |
 | CVE-2017-6740                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2017-07-17   |
