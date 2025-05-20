@@ -147,6 +147,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 
 | CVE ID                                                  | Implemented | Detail                                                  | Published Date |
 |:--------------------------------------------------------|:-----------:|:--------------------------------------------------------|:--------------:|
+| CVE-2025-4427                                           |      ✅      | Official Nuclei template.                               |   2025-05-13   | 
 | CVE-2025-32432                                          |      ✅      | Official Nuclei template.                               |   2025-04-25   | 
 | CVE-2025-34028                                          |      ✅      | Official Nuclei template.                               |   2025-04-22   | 
 | CVE-2025-28367                                          |      ✅      | Official Nuclei template.                               |   2025-04-21   | 
