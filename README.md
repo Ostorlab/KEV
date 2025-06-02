@@ -1098,6 +1098,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2018-2628                                           |      ✅      | Metasploit module.                                      |   2018-04-18   |
 | CVE-2018-5430                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2018-04-17   |
 | CVE-2018-1273                                           |      ✅      | Official Nuclei template.                               |   2018-04-11   |
+| CVE-2018-8046                                           |      ✅      | Official Nuclei template.                               |   2018-04-01   |
 | CVE-2018-7600                                           |      ✅      | Official Nuclei template and Tsunami scanner were used. |   2018-03-29   |
 | CVE-2018-0155                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2018-03-28   |
 | CVE-2018-0171                                           |      ❌      | DOS attack.                                             |   2018-03-28   |
