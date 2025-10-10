@@ -614,7 +614,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2021-44228                                          |      ✅      | Official Nuclei template.                               |   2021-12-10   |
 | CVE-2021-20038                                          |      ✅      | Official Nuclei template.                               |   2021-12-08   |
 | CVE-2021-27860                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2021-12-08   |
-| CVE-2021-43798                                          |      ✅      | Covered by tsunami scanner.                             |   2021-12-07   |
+| CVE-2021-43798                                          |      ✅      | Official Nuclei template.                               |   2025-10-10   |
 | CVE-2021-44077                                          |      ✅      | Official Nuclei template.                               |   2021-11-28   |
 | CVE-2021-38000                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2021-11-23   |
 | CVE-2021-38003                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2021-11-23   |
