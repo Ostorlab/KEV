@@ -1,0 +1,80 @@
+id: saltcorn-reflected-xss-command-injection
+
+info:
+  name: Saltcorn - Reflected XSS & Command Injection Chain (GHSA-cr3w-cw5w-h3fj)
+  author: soop
+  severity: critical
+  description: |
+    Saltcorn versions >= 1.1.1 and < 1.5.0-beta.19 are vulnerable to a reflected XSS
+    in GET /admin/edit-codepage/:name (via the name parameter) and a command injection
+    in GET /admin/backup (via the backup password). Both can be chained for 1-click RCE
+    when an admin clicks a crafted link.
+    This template confirms the vulnerability without authentication by checking that
+    HTML angle brackets in route parameters are reflected without encoding on the
+    public /page/ route, which uses the same unpatched error_catcher middleware.
+    Patched versions sanitize angle brackets to HTML entities, so this template
+    only triggers on truly vulnerable instances.
+  impact: |
+    An attacker can chain the reflected XSS with the command injection to execute arbitrary
+    shell commands on the server if an admin with an active session clicks a malicious link.
+  remediation: Upgrade Saltcorn to version 1.5.0-beta.19 or later.
+  reference:
+    - https://github.com/advisories/GHSA-cr3w-cw5w-h3fj
+    - https://github.com/saltcorn/saltcorn/commit/1bf681e
+  classification:
+    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+    cvss-score: 9.6
+    cwe-id:
+      - CWE-79
+      - CWE-77
+  metadata:
+    max-request: 1
+    verified: true
+    shodan-query: http.html:"_sc_version_tag"
+    fofa-query: body="_sc_version_tag"
+  tags: saltcorn,xss,rce,command-injection
+
+http:
+  - method: GET
+    path:
+      - '{{BaseURL}}/page/sc<xss>nuclei'
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: body
+        words:
+          - 'sc<xss>nuclei'
+          - "_sc_version_tag"
+        condition: and
+
+      - type: word
+        part: body
+        words:
+          - "not found"
+        case-insensitive: true
+
+      - type: word
+        part: body
+        words:
+          - "sc&lt;xss&gt;nuclei"
+        negative: true
+
+      - type: status
+        status:
+          - 200
+          - 404
+        condition: or
+
+    extractors:
+      - type: regex
+        name: version_tag
+        group: 1
+        regex:
+          - '_sc_version_tag\s*=\s*"([a-f0-9]+)"'
+
+      - type: regex
+        name: bootstrap_theme_version
+        group: 1
+        regex:
+          - 'any-bootstrap-theme@([0-9.]+)'
