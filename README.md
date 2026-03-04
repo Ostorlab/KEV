@@ -147,6 +147,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 
 | CVE ID                                                  | Implemented | Detail                                                  | Published Date |
 |:--------------------------------------------------------|:-----------:|:--------------------------------------------------------|:--------------:|
+| CVE-2025-68461                                          |      ✅      | Official Nuclei template by Ostorlab .        |   2026-03-04   |
 | CVE-2026-0770                                          |      ✅      | Official Nuclei template (modified by Ostorlab).        |   2026-03-02   |
 | GHSA-cr3w-cw5w-h3fj                                         |      ✅      | Custom Exploit by Ostorlab  |   2026-02-25   |
 | CVE-2026-1357                                          |      ✅      | Custom Nuclei template by Ostorlab.        |   2026-02-16   |
