@@ -1,0 +1,61 @@
+id: shell-history
+
+info:
+  name: Shell History
+  author: pentest_swissky,geeknik
+  severity: low
+  description: Discover history for bash, ksh, sh, and zsh
+  metadata:
+    max-request: 4
+  tags: misconfig,vuln
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/.bash_history"
+      - "{{BaseURL}}/.ksh_history"
+      - "{{BaseURL}}/.sh_history"
+      - "{{BaseURL}}/.zsh_history"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "mkdir "
+          - "chmod "
+          - "mv "
+          - "nano "
+          - "vim "
+          - "pico "
+          - "sudo "
+          - "cd "
+          - "cp "
+          - "ps aux"
+          - "ls "
+          - "logout"
+        condition: or
+
+      - type: word
+        part: header
+        words:
+          - "application/javascript"
+          - "text/javascript"
+          - "application/x-javascript"
+          - "application/json"
+          - "application/xml"
+          - "text/html"
+          - "image/"
+        negative: true
+
+      - type: word
+        part: body
+        words:
+          - "<?xml"
+          - "<env"
+          - "<html"
+          - "html>"
+        negative: true
+
+      - type: status
+        status:
+          - 200
