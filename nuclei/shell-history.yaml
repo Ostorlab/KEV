@@ -11,7 +11,6 @@ info:
 
 http:
   - method: GET
-    max-redirects: 1
     path:
       - "{{BaseURL}}/.bash_history"
       - "{{BaseURL}}/.ksh_history"
@@ -37,18 +36,24 @@ http:
         condition: or
 
       - type: word
-        part: response
+        part: header
         words:
-          - "<?xml"
-          - "<env"
           - "application/javascript"
           - "text/javascript"
           - "application/x-javascript"
           - "application/json"
           - "application/xml"
-          - "html>"
           - "text/html"
           - "image/"
+        negative: true
+
+      - type: word
+        part: body
+        words:
+          - "<?xml"
+          - "<env"
+          - "<html"
+          - "html>"
         negative: true
 
       - type: status
