@@ -153,10 +153,12 @@ Contributions are welcome, especially new detectors for recently exploited vulne
 For the moment, we are currently focused on the CISA KEV Database and Google Tsunami.
 
 > [!NOTE]
+> ✅ = detected by this agent group; ❌ = not detected (the Detail column gives the reason); ⏳ = in progress.
 > "Official Nuclei template." means the detection runs a template from
 > [projectdiscovery/nuclei-templates](https://github.com/projectdiscovery/nuclei-templates) stored in `nuclei/`.
-> Templates tagged `intrusive` change state on the target (for example by uploading a file or creating an account),
-> and templates that use `interactsh` need the target to reach an out-of-band callback server.
+> Templates tagged `intrusive` modify the target (for example by uploading a file or creating an account). New ones are
+> not accepted (see [CONTRIBUTING.md](CONTRIBUTING.md)); rows excluded for this reason read "Template modifies the target (intrusive).".
+> Templates that use `interactsh` confirm exploitation only when the target can reach the out-of-band callback server.
 
 | CVE ID                                                  | Implemented | Detail                                                  | Published Date |
 |:--------------------------------------------------------|:-----------:|:--------------------------------------------------------|:--------------:|
@@ -201,7 +203,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2026-65400                                          |      ❌      | No public Nuclei template available.                    |   2026-08-06   |
 | CVE-2026-5430                                           |      ❌      | No public Nuclei template available.                    |   2026-08-06   |
 | CVE-2026-18577                                          |      ✅      | Official Nuclei template.                               |   2026-08-02   |
-| CVE-2026-18556                                          |      ❌      | No Nuclei template; its fix bypass CVE-2026-18577 is covered. |   2026-08-01   |
+| CVE-2026-18556                                          |      ❌      | No dedicated template; vulnerable hosts are reported as CVE-2026-18577. |   2026-08-01   |
 | CVE-2026-59310                                          |      ❌      | No public Nuclei template available.                    |   2026-07-30   |
 | CVE-2026-20316                                          |      ❌      | No public Nuclei template available.                    |   2026-07-29   |
 | CVE-2026-63077                                          |      ❌      | Template modifies the target (intrusive).               |   2026-07-27   |
