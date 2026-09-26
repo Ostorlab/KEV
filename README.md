@@ -2,6 +2,8 @@
 
 ## Introduction
 
+KEV is an open-source project maintained by [Ostorlab](https://ostorlab.co).
+
 This project is dedicated to automate the detection of known exploited vulnerabilities through a single command, it includes exploits for vulnerabilities from:
 
 - [Known Exploited Vulnerabilities Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)  by CISA
@@ -141,6 +143,11 @@ To list the details of a vulnerability:
 ostorlab vulnz describe -v <vuln-id>
 ```
 [![asciicast](https://asciinema.org/a/640566.svg)](https://asciinema.org/a/640566)
+## Contributing
+
+Contributions are welcome, especially new detectors for recently exploited vulnerabilities. See
+[CONTRIBUTING.md](CONTRIBUTING.md) for how to add and test a detector.
+
 ## Current Coverage
 
 For the moment, we are currently focused on the CISA KEV Database and Google Tsunami.
