@@ -145,6 +145,12 @@ ostorlab vulnz describe -v <vuln-id>
 
 For the moment, we are currently focused on the CISA KEV Database and Google Tsunami.
 
+> [!NOTE]
+> "Official Nuclei template." means the detection runs a template from
+> [projectdiscovery/nuclei-templates](https://github.com/projectdiscovery/nuclei-templates) stored in `nuclei/`.
+> Templates tagged `intrusive` change state on the target (for example by uploading a file or creating an account),
+> and templates that use `interactsh` need the target to reach an out-of-band callback server.
+
 | CVE ID                                                  | Implemented | Detail                                                  | Published Date |
 |:--------------------------------------------------------|:-----------:|:--------------------------------------------------------|:--------------:|
 | CVE-2026-94127                                          |      ❌      | No public Nuclei template available.                    |   2026-09-22   |
@@ -188,7 +194,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2026-65400                                          |      ❌      | No public Nuclei template available.                    |   2026-08-06   |
 | CVE-2026-5430                                           |      ❌      | No public Nuclei template available.                    |   2026-08-06   |
 | CVE-2026-18577                                          |      ✅      | Official Nuclei template.                               |   2026-08-02   |
-| CVE-2026-18556                                          |      ✅      | Official Nuclei template (CVE-2026-18577 version check covers it). |   2026-08-01   |
+| CVE-2026-18556                                          |      ❌      | No Nuclei template; its fix bypass CVE-2026-18577 is covered. |   2026-08-01   |
 | CVE-2026-59310                                          |      ❌      | No public Nuclei template available.                    |   2026-07-30   |
 | CVE-2026-20316                                          |      ❌      | No public Nuclei template available.                    |   2026-07-29   |
 | CVE-2026-63077                                          |      ✅      | Official Nuclei template.                               |   2026-07-27   |
@@ -406,7 +412,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2025-25257                                          |      ✅      | Official Nuclei template.                               |   2025-07-17   |
 | CVE-2025-20337                                          |      ❌      | No public Nuclei template available.                    |   2025-07-16   |
 | CVE-2025-6558                                           |      ❌      | User interaction needed.                                |   2025-07-15   |
-| CVE-2025-47813                                          |      ✅      | Official Nuclei template.                               |   2025-07-10   |
+| CVE-2025-47813                                          |      ❌      | Detection is not conclusive.                            |   2025-07-10   |
 | CVE-2025-47812                                          |      ✅      | Official Nuclei template.                               |   2025-07-10   |
 | CVE-2025-49706                                          |      ✅      | Official Nuclei template.                               |   2025-07-08   |
 | CVE-2025-49704                                          |      ❌      | Requires authentication.                                |   2025-07-08   |
@@ -508,7 +514,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2025-0994                                           |      ❌      | Requires authentication.                                |   2025-02-06   |
 | CVE-2025-0674                                           |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2025-02-04   |
 | CVE-2025-0890                                           |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2025-02-04   |
-| CVE-2024-40891                                          |      ❌      | Requires authentication.                                |   2025-02-04   |
+| CVE-2024-40891                                          |      ❌      | Requires authentication; chained with CVE-2025-0890 (covered). |   2025-02-04   |
 | CVE-2024-40890                                          |      ❌      | Requires authentication.                                |   2025-02-04   |
 | CVE-2025-25181                                          |      ❌      | No public Nuclei template available.                    |   2025-02-03   |
 | CVE-2024-57968                                          |      ❌      | Requires authentication.                                |   2025-02-03   |
@@ -579,11 +585,11 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2024-43919                                          |      ✅      | Official Nuclei template.                               |   2024-11-01   |
 | CVE-2024-50550                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-10-29   |
 | CVE-2024-51567                                          |      ✅      | Official Nuclei template.                               |   2024-10-29   |
-| CVE-2024-51378                                          |      ✅      | Official Nuclei template.                               |   2024-10-29   |
+| CVE-2024-51378                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-10-29   |
 | CVE-2024-50498                                          |      ✅      | Official Nuclei template.                               |   2024-10-28   |
 | CVE-2024-50623                                          |      ✅      | Official Nuclei template.                               |   2024-10-27   |
 | Cyberpanel-rce                                          |      ✅      | Official Nuclei template.                               |   2024-10-27   |
-| CVE-2024-47575                                          |      ❌      | Nuclei template uses the code protocol (not enabled in Agent Nuclei). |   2024-10-23   |
+| CVE-2024-47575                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-10-23   |
 | CVE-2024-20481                                          |      ❌      | No public Nuclei template available.                    |   2024-10-23   |
 | CVE-2024-41713                                          |      ✅      | Official Nuclei template.                               |   2024-10-21   |
 | CVE-2024-35286                                          |      ✅      | Official Nuclei template.                               |   2024-10-21   |
@@ -603,8 +609,8 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2024-47176                                          |      ✅      | Official Nuclei template.                               |   2024-09-26   |
 | CVE-2024-8963                                           |      ✅      | Official Nuclei template.                               |   2024-09-19   |
 | CVE-2024-38812                                          |      ✅      | Custom Nuclei template by Ostorlab.                     |   2024-09-17   |
-| CVE-2024-8957                                           |      ❌      | Requires authentication.                                |   2024-09-17   |
-| CVE-2024-8956                                           |      ❌      | No public Nuclei template available.                    |   2024-09-17   |
+| CVE-2024-8957                                           |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-09-17   |
+| CVE-2024-8956                                           |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-09-17   |
 | CVE-2024-38813                                          |      ❌      | Requires authentication.                                |   2024-09-17   |
 | CVE-2024-46938                                          |      ✅      | Official Nuclei template.                               |   2024-09-15   |
 | CVE-2024-8522                                           |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-09-12   |
@@ -640,7 +646,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2024-38178                                          |      ❌      | User interaction needed.                                |   2024-08-13   |
 | CVE-2024-38107                                          |      ❌      | Local attack vector.                                    |   2024-08-13   |
 | CVE-2024-38106                                          |      ❌      | Local attack vector.                                    |   2024-08-13   |
-| CVE-2024-28986                                          |      ✅      | Official Nuclei template.                               |   2024-08-13   |
+| CVE-2024-28986                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-08-13   |
 | CVE-2024-7694                                           |      ❌      | Requires authentication.                                |   2024-08-12   |
 | CVE-2024-41710                                          |      ❌      | Adjacent network attack vector.                         |   2024-08-12   |
 | CVE-2024-27443                                          |      ✅      | Official Nuclei template.                               |   2024-08-12   |
@@ -1091,7 +1097,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2021-1048                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2021-12-15   |
 | CVE-2021-43226                                          |      ❌      | Local attack vector.                                    |   2021-12-15   |
 | CVE-2021-45046                                          |      ✅      | Official Nuclei template.                               |   2021-12-14   |
-| CVE-2021-39935                                          |      ✅      | Official Nuclei template (CVE-2021-22214, same vulnerability). |   2021-12-13   |
+| CVE-2021-39935                                          |      ✅      | Covered by the official Nuclei template for CVE-2021-22214 (same vulnerability). |   2021-12-13   |
 | CVE-2021-44515                                          |      ✅      | Official Nuclei template.                               |   2021-12-12   |
 | CVE-2021-44228                                          |      ✅      | Official Nuclei template.                               |   2021-12-10   |
 | CVE-2021-20038                                          |      ✅      | Official Nuclei template.                               |   2021-12-08   |
@@ -1135,7 +1141,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2021-36260                                          |      ✅      | Official Nuclei template.                               |   2021-09-22   |
 | CVE-2021-38406                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2021-09-17   |
 | CVE-2021-40438                                          |      ✅      | Official Nuclei template.                               |   2021-09-16   |
-| CVE-2121-33044                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2021-09-15   |
+| CVE-2021-33044                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2021-09-15   |
 | CVE-2021-40444                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2021-09-15   |
 | CVE-2021-38649                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2021-09-15   |
 | CVE-2021-36955                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2021-09-15   |
@@ -1144,7 +1150,6 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2021-38645                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2021-09-15   |
 | CVE-2021-38646                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2021-09-15   |
 | CVE-2021-33045                                          |      ✅      | Official Nuclei template.                               |   2021-09-15   |
-| CVE-2021-33044                                          |      ✅      | Official Nuclei template.                               |   2021-09-15   |
 | CVE-2021-38163                                          |      ❌      | Required credentials.                                   |   2021-09-14   |
 | CVE-2021-40870                                          |      ✅      | Official Nuclei template.                               |   2021-09-13   |
 | CVE-2021-30657                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2021-09-08   |
@@ -1432,7 +1437,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2020-0688                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2020-02-11   |
 | CVE-2020-0674                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2020-02-11   |
 | CVE-2020-0683                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2020-02-11   |
-| CVE-2020-0618                                           |      ✅      | Official Nuclei template.                               |   2020-02-11   |
+| CVE-2020-0618                                           |      ❌      | Detection is not conclusive.                            |   2020-02-11   |
 | CVE-2019-18988                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2020-02-07   |
 | CVE-2019-19356                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2020-02-07   |
 | CVE-2020-8657                                           |      ✅      | Metasploit module.                                      |   2020-02-06   |
@@ -1604,7 +1609,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2018-8373                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2018-08-15   |
 | CVE-2018-8414                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2018-08-15   |
 | CVE-2018-8406                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2018-08-15   |
-| CVE-2018-14933                                          |      ✅      | Official Nuclei template.                               |   2018-08-04   |
+| CVE-2018-14933                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2018-08-04   |
 | CVE-2018-14847                                          |      ❌      | Metasploit module without a check/check_code.           |   2018-08-02   |
 | CVE-2018-7602                                           |      ✅      | Official Nuclei template.                               |   2018-07-19   |
 | CVE-2018-8298                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2018-07-10   |
@@ -1743,7 +1748,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2016-10174                                          |      ❌      | Metasploit module without a check/check_code.           |   2017-01-29   |
 | CVE-2016-5198                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2017-01-19   |
 | CVE-2017-5521                                           |      ✅      | Official Nuclei template.                               |   2017-01-17   |
-| CVE-2016-10033                                          |      ✅      | Official Nuclei template.                               |   2016-12-30   |
+| CVE-2016-10033                                          |      ❌      | Detection is not conclusive.                            |   2016-12-30   |
 | CVE-2016-7262                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2016-12-20   |
 | CVE-2016-7892                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2016-12-15   |
 | CVE-2016-6277                                           |      ✅      | Official Nuclei template.                               |   2016-12-14   |
@@ -1870,7 +1875,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2014-0780                                           |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid  |   2014-04-25   |
 | CVE-2014-0160                                           |      ✅      | Metasploit module.                                      |   2014-04-07   |
 | CVE-2014-1761                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2014-03-25   |
-| CVE-2014-2120                                           |      ❌      | User interaction needed.                                |   2014-03-19   |
+| CVE-2014-2120                                           |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2014-03-19   |
 | CVE-2013-7331                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2014-02-26   |
 | CVE-2014-0502                                           |      ❌      | User interaction needed.                                |   2014-02-21   |
 | CVE-2014-0322                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2014-02-14   |
