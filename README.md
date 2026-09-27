@@ -1693,7 +1693,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2017-9805                                           |      ✅      | Official Nuclei template and Tsunami scanner were used. |   2017-09-15   |
 | CVE-2017-8759                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2017-09-12   |
 | CVE-2017-6627                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2017-09-07   |
-| CVE-2017-11317                                          |      ✅      | Custom Nuclei template by Ostorlab (RadAsyncUpload handler fingerprint — flags any install of the control, including patched releases). |   2017-08-23   |
+| CVE-2017-11317                                          |      ✅      | Custom Nuclei template by Ostorlab (RadAsyncUpload handler fingerprint — flags any installation that exposes the handler, including patched releases). |   2017-08-23   |
 | CVE-2017-11357                                          |      ✅      | Same Nuclei template as CVE-2017-11317.                 |   2017-08-23   |
 | CVE-2017-6327                                           |      ❌      | Authentication Required .                               |   2017-08-11   |
 | CVE-2015-2291                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2017-08-09   |
@@ -1972,7 +1972,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2010-2568                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2010-07-22   |
 | CVE-2010-1297                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2010-06-08   |
 | CVE-2010-1428                                           |      ✅      | Custom Nuclei template by Ostorlab (JMX/web-console exposure fingerprint — flags unauthenticated console presence, not patch state). |   2010-04-28   |
-| CVE-2010-0738                                           |      ✅      | Same Nuclei template as CVE-2010-1428 (JMX/web-console exposure fingerprint). |   2010-04-28   |
+| CVE-2010-0738                                           |      ✅      | Same Nuclei template as CVE-2010-1428 (JMX/web-console exposure fingerprint — flags unauthenticated console presence, not patch state). |   2010-04-28   |
 | CVE-2010-0840                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2010-04-01   |
 | CVE-2010-0806                                           |      ❌      | User interaction needed.                                |   2010-03-10   |
 | CVE-2010-0188                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2010-02-22   |
