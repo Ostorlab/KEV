@@ -1078,7 +1078,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2021-4102                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2022-02-11   |
 | CVE-2022-0185                                           |      ❌      | Local attack vector.                                    |   2022-02-11   |
 | CVE-2022-20701                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2022-02-10   |
-| CVE-2022-20699                                          |      ✅      | Custom Nuclei template and Metasploit module.           |   2022-02-10   |
+| CVE-2022-20699                                          |      ✅      | Custom Nuclei template and Metasploit module (fingerprint — flags the SSLVPN login banner, not patch state). |   2022-02-10   |
 | CVE-2022-20703                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2022-02-10   |
 | CVE-2022-20708                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2022-02-10   |
 | CVE-2022-20700                                          |      ❌      | Missing public exploit.                                 |   2022-02-10   |
@@ -1549,7 +1549,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2019-3568                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2019-05-14   |
 | CVE-2019-11510                                          |      ✅      | Official Nuclei template.                               |   2019-05-08   |
 | CVE-2018-4063                                           |      ❌      | Requires authentication.                                |   2019-05-06   |
-| CVE-2017-18368                                          |      ✅      | Custom Nuclei template by Ostorlab.                     |   2019-05-02   |
+| CVE-2017-18368                                          |      ✅      | Custom Nuclei template by Ostorlab (device fingerprint — matches the P-660HN-T1A model string, not firmware patch state). |   2019-05-02   |
 | CVE-2019-3929                                           |      ✅      | Official Nuclei template.                               |   2019-04-30   |
 | CVE-2019-9621                                           |      ✅      | Official Nuclei template.                               |   2019-04-30   |
 | CVE-2019-2725                                           |      ✅      | Official Nuclei template.                               |   2019-04-26   |
@@ -1693,7 +1693,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2017-9805                                           |      ✅      | Official Nuclei template and Tsunami scanner were used. |   2017-09-15   |
 | CVE-2017-8759                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2017-09-12   |
 | CVE-2017-6627                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2017-09-07   |
-| CVE-2017-11317                                          |      ✅      | Custom Nuclei template by Ostorlab.                     |   2017-08-23   |
+| CVE-2017-11317                                          |      ✅      | Custom Nuclei template by Ostorlab (RadAsyncUpload handler fingerprint — flags any install of the control, including patched releases). |   2017-08-23   |
 | CVE-2017-11357                                          |      ✅      | Same Nuclei template as CVE-2017-11317.                 |   2017-08-23   |
 | CVE-2017-6327                                           |      ❌      | Authentication Required .                               |   2017-08-11   |
 | CVE-2015-2291                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2017-08-09   |
@@ -1840,7 +1840,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2015-1770                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2015-06-09   |
 | CVE-2015-4068                                           |      ❌      | Not enough technical details available.                 |   2015-05-29   |
 | CVE-2015-1671                                           |      ❌      | Local attack vector.                                    |   2015-05-13   |
-| CVE-2014-8361                                           |      ✅      | Custom Nuclei template by Ostorlab.                     |   2015-05-01   |
+| CVE-2014-8361                                           |      ✅      | Custom Nuclei template by Ostorlab (D-Link IGD model prefix fingerprint — not firmware-gated; other vendors' affected Realtek devices are not detected). |   2015-05-01   |
 | CVE-2015-1701                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2015-04-21   |
 | CVE-2015-3035                                           |      ✅      | Official Nuclei template.                               |   2015-04-21   |
 | CVE-2015-1641                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2015-04-14   |
@@ -1899,7 +1899,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2013-3897                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2013-10-09   |
 | CVE-2013-3896                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2013-10-09   |
 | CVE-2013-3893                                           |      ❌      | User interaction needed.                                |   2013-09-18   |
-| CVE-2013-4810                                           |      ✅      | Custom Nuclei template by Ostorlab.                     |   2013-09-16   |
+| CVE-2013-4810                                           |      ✅      | Custom Nuclei template by Ostorlab (JBoss JMXInvokerServlet fingerprint — product attribution to HP ProCurve Manager is not confirmed). |   2013-09-16   |
 | CVE-2013-3346                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2013-08-30   |
 | CVE-2013-2251                                           |      ✅      | Official Nuclei template.                               |   2013-07-19   |
 | CVE-2013-3163                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2013-07-09   |
@@ -1971,8 +1971,8 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2010-1871                                           |      ✅      | Metasploit module.                                      |   2010-08-05   |
 | CVE-2010-2568                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2010-07-22   |
 | CVE-2010-1297                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2010-06-08   |
-| CVE-2010-1428                                           |      ✅      | Custom Nuclei template by Ostorlab.                     |   2010-04-28   |
-| CVE-2010-0738                                           |      ✅      | Same Nuclei template as CVE-2010-1428.                  |   2010-04-28   |
+| CVE-2010-1428                                           |      ✅      | Custom Nuclei template by Ostorlab (JMX/web-console exposure fingerprint — flags unauthenticated console presence, not patch state). |   2010-04-28   |
+| CVE-2010-0738                                           |      ✅      | Same Nuclei template as CVE-2010-1428 (JMX/web-console exposure fingerprint). |   2010-04-28   |
 | CVE-2010-0840                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2010-04-01   |
 | CVE-2010-0806                                           |      ❌      | User interaction needed.                                |   2010-03-10   |
 | CVE-2010-0188                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2010-02-22   |
