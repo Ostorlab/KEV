@@ -152,6 +152,12 @@ Contributions are welcome, especially new detectors for recently exploited vulne
 
 For the moment, we are currently focused on the CISA KEV Database and Google Tsunami.
 
+The [2026-11-05 prioritized audit](docs/coverage-audit-2026-11-05.md) maps 30 CVEs:
+seven pending Asteroid remote metadata assessments (⏳), and 23 offline
+owner-inventory assessments that remain outside automatic agent-group detection
+(❌). Sources, publication dates, deployment conditions and evidence limits are
+recorded in the audit; unmerged implementation is not deployed coverage.
+
 > [!NOTE]
 > ✅ = detected by this agent group; ❌ = not detected (the Detail column gives the reason); ⏳ = in progress.
 > "Official Nuclei template." means the detection runs a template from
@@ -162,24 +168,36 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 
 | CVE ID                                                  | Implemented | Detail                                                  | Published Date |
 |:--------------------------------------------------------|:-----------:|:--------------------------------------------------------|:--------------:|
-| CVE-2026-94127                                          |      ❌      | No public Nuclei template available.                    |   2026-09-22   |
-| CVE-2026-93952                                          |      ❌      | No public Nuclei template available.                    |   2026-09-22   |
-| CVE-2026-93616                                          |      ❌      | No public Nuclei template available.                    |   2026-09-22   |
+| CVE-2026-105133                                         |      ❌      | [Asteroid owner-inventory assessment](docs/coverage-audit-2026-11-05.md): offline only; no automatic agent-group detection. |   2026-10-04   |
+| CVE-2026-105134                                         |      ❌      | [Asteroid owner-inventory assessment](docs/coverage-audit-2026-11-05.md): offline only; no automatic agent-group detection. |   2026-10-04   |
+| CVE-2026-102764                                         |      ❌      | [Asteroid owner-inventory assessment](docs/coverage-audit-2026-11-05.md): offline only; no automatic agent-group detection. |   2026-10-15   |
+| CVE-2026-76504                                          |      ❌      | [Asteroid owner-inventory assessment](docs/coverage-audit-2026-11-05.md): offline only; no automatic agent-group detection. |   2026-09-30   |
+| CVE-2026-96652                                          |      ⏳      | [Asteroid remote metadata assessment](docs/coverage-audit-2026-11-05.md): pending integration/release; exploitability unconfirmed. |   2026-09-23   |
+| CVE-2026-96654                                          |      ⏳      | [Asteroid remote metadata assessment](docs/coverage-audit-2026-11-05.md): pending integration/release; exploitability unconfirmed. |   2026-09-23   |
+| CVE-2026-96655                                          |      ⏳      | [Asteroid remote metadata assessment](docs/coverage-audit-2026-11-05.md): pending integration/release; exploitability unconfirmed. |   2026-09-23   |
+| CVE-2026-96656                                          |      ⏳      | [Asteroid remote metadata assessment](docs/coverage-audit-2026-11-05.md): pending integration/release; exploitability unconfirmed. |   2026-09-23   |
+| CVE-2026-104286                                         |      ❌      | [Asteroid owner-inventory assessment](docs/coverage-audit-2026-11-05.md): offline only; no automatic agent-group detection. |   2026-10-01   |
+| CVE-2026-76519                                          |      ❌      | [Asteroid owner-inventory assessment](docs/coverage-audit-2026-11-05.md): offline only; no automatic agent-group detection. |   2026-10-14   |
+| CVE-2016-3081                                           |      ❌      | [Asteroid owner-inventory assessment](docs/coverage-audit-2026-11-05.md): offline only; no automatic agent-group detection. |   2016-04-26   |
+| CVE-2015-3306                                           |      ❌      | [Asteroid owner-inventory assessment](docs/coverage-audit-2026-11-05.md): offline only; no automatic agent-group detection. |   2015-05-18   |
+| CVE-2026-94127                                          |      ❌      | [Asteroid owner-inventory assessment](docs/coverage-audit-2026-11-05.md): offline only; no automatic agent-group detection. |   2026-09-22   |
+| CVE-2026-93952                                          |      ❌      | [Asteroid owner-inventory assessment](docs/coverage-audit-2026-11-05.md): offline only; no automatic agent-group detection. |   2026-09-22   |
+| CVE-2026-93616                                          |      ❌      | [Asteroid owner-inventory assessment](docs/coverage-audit-2026-11-05.md): offline only; no automatic agent-group detection. |   2026-09-22   |
 | CVE-2026-87902                                          |      ✅      | Official Nuclei template.                               |   2026-09-22   |
 | CVE-2026-87886                                          |      ❌      | Local attack vector.                                    |   2026-09-17   |
-| CVE-2026-76460                                          |      ❌      | No public Nuclei template available.                    |   2026-09-16   |
+| CVE-2026-76460                                          |      ❌      | [Asteroid owner-inventory assessment](docs/coverage-audit-2026-11-05.md): offline only; no automatic agent-group detection. |   2026-09-16   |
 | CVE-2026-58704                                          |      ❌      | Adjacent network attack vector.                         |   2026-09-15   |
-| CVE-2026-76461                                          |      ❌      | No public Nuclei template available.                    |   2026-09-14   |
+| CVE-2026-76461                                          |      ❌      | [Asteroid owner-inventory assessment](docs/coverage-audit-2026-11-05.md): offline only; no automatic agent-group detection. |   2026-09-14   |
 | CVE-2026-85706                                          |      ✅      | Official Nuclei template.                               |   2026-09-12   |
 | CVE-2026-87491                                          |      ❌      | User interaction needed.                                |   2026-09-09   |
-| CVE-2026-85102                                          |      ❌      | No public Nuclei template available.                    |   2026-09-09   |
+| CVE-2026-85102                                          |      ❌      | [Asteroid owner-inventory assessment](docs/coverage-audit-2026-11-05.md): offline only; no automatic agent-group detection. |   2026-09-09   |
 | CVE-2026-85880                                          |      ❌      | Local attack vector.                                    |   2026-09-08   |
 | CVE-2026-84869                                          |      ❌      | Requires authentication.                                |   2026-09-08   |
 | CVE-2026-81963                                          |      ❌      | Local attack vector.                                    |   2026-09-08   |
 | CVE-2026-75650                                          |      ❌      | No public Nuclei template available.                    |   2026-09-07   |
 | CVE-2026-86218                                          |      ✅      | Official Nuclei template.                               |   2026-09-06   |
-| CVE-2026-86060                                          |      ❌      | No public Nuclei template available.                    |   2026-09-05   |
-| CVE-2026-67279                                          |      ❌      | No public Nuclei template available.                    |   2026-09-05   |
+| CVE-2026-86060                                          |      ❌      | [Asteroid owner-inventory assessment](docs/coverage-audit-2026-11-05.md): offline only; no automatic agent-group detection. |   2026-09-05   |
+| CVE-2026-67279                                          |      ❌      | [Asteroid owner-inventory assessment](docs/coverage-audit-2026-11-05.md): offline only; no automatic agent-group detection. |   2026-09-05   |
 | CVE-2026-67277                                          |      ❌      | No public Nuclei template available.                    |   2026-09-05   |
 | CVE-2026-85046                                          |      ❌      | User interaction needed.                                |   2026-09-03   |
 | CVE-2026-83549                                          |      ❌      | No Nuclei template; chained with CVE-2026-83548 (covered). |   2026-09-01   |
@@ -188,9 +206,9 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2026-82078                                          |      ❌      | No Nuclei template; chained with CVE-2026-81578 (covered). |   2026-08-28   |
 | CVE-2026-81578                                          |      ✅      | Official Nuclei template.                               |   2026-08-28   |
 | CVE-2026-60004                                          |      ❌      | Template modifies the target (intrusive).               |   2026-08-26   |
-| CVE-2026-72530                                          |      ❌      | No public Nuclei template available.                    |   2026-08-19   |
-| CVE-2026-72529                                          |      ❌      | No public Nuclei template available.                    |   2026-08-19   |
-| CVE-2026-19490                                          |      ❌      | No public Nuclei template available.                    |   2026-08-19   |
+| CVE-2026-72530                                          |      ❌      | [Asteroid owner-inventory assessment](docs/coverage-audit-2026-11-05.md): offline only; no automatic agent-group detection. |   2026-08-19   |
+| CVE-2026-72529                                          |      ❌      | [Asteroid owner-inventory assessment](docs/coverage-audit-2026-11-05.md): offline only; no automatic agent-group detection. |   2026-08-19   |
+| CVE-2026-19490                                          |      ❌      | [Asteroid owner-inventory assessment](docs/coverage-audit-2026-11-05.md): offline only; no automatic agent-group detection. |   2026-08-19   |
 | CVE-2026-64849                                          |      ❌      | Template modifies the target (intrusive).               |   2026-08-17   |
 | CVE-2026-73570                                          |      ✅      | Official Nuclei template.                               |   2026-08-13   |
 | CVE-2026-66384                                          |      ❌      | Requires authentication.                                |   2026-08-12   |
@@ -223,12 +241,12 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2026-15410                                          |      ❌      | No Nuclei template; chained with CVE-2026-15409 (covered). |   2026-07-14   |
 | CVE-2026-15409                                          |      ✅      | Official Nuclei template.                               |   2026-07-14   |
 | CVE-2026-56291                                          |      ❌      | Template modifies the target (intrusive).               |   2026-07-09   |
-| CVE-2026-59822                                          |      ❌      | No public Nuclei template available.                    |   2026-07-08   |
+| CVE-2026-59822                                          |      ⏳      | [Asteroid remote metadata assessment](docs/coverage-audit-2026-11-05.md): pending integration/release; exploitability unconfirmed. |   2026-07-08   |
 | CVE-2026-53362                                          |      ❌      | Local attack vector.                                    |   2026-07-04   |
 | CVE-2026-8452                                           |      ❌      | No public Nuclei template available.                    |   2026-06-30   |
 | CVE-2026-48282                                          |      ❌      | Template modifies the target (intrusive).               |   2026-06-30   |
 | CVE-2026-56290                                          |      ❌      | Template modifies the target (intrusive).               |   2026-06-29   |
-| CVE-2026-49869                                          |      ❌      | No public Nuclei template available.                    |   2026-06-26   |
+| CVE-2026-49869                                          |      ⏳      | [Asteroid remote metadata assessment](docs/coverage-audit-2026-11-05.md): pending integration/release; exploitability unconfirmed. |   2026-06-26   |
 | CVE-2026-53266                                          |      ❌      | Local attack vector.                                    |   2026-06-25   |
 | CVE-2026-55255                                          |      ❌      | Requires authentication.                                |   2026-06-23   |
 | CVE-2026-48939                                          |      ❌      | Template modifies the target (intrusive).               |   2026-06-20   |
@@ -392,7 +410,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2025-5086                                           |      ✅      | Official Nuclei template.                               |   2025-09-22   |
 | CVE-2025-59689                                          |      ❌      | User interaction needed.                                |   2025-09-19   |
 | CVE-2025-48703                                          |      ❌      | Template modifies the target (intrusive).               |   2025-09-19   |
-| CVE-2025-9242                                           |      ❌      | Nuclei template uses the code protocol (not enabled in Agent Nuclei). |   2025-09-17   |
+| CVE-2025-9242                                           |      ❌      | [Asteroid owner-inventory assessment](docs/coverage-audit-2026-11-05.md): offline only; no automatic agent-group detection. |   2025-09-17   |
 | CVE-2025-21043                                          |      ❌      | User interaction needed.                                |   2025-09-12   |
 | CVE-2025-21042                                          |      ❌      | User interaction needed.                                |   2025-09-12   |
 | CVE-2025-54236                                          |      ❌      | Template modifies the target (intrusive).               |   2025-09-09   |
@@ -557,7 +575,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2024-51479                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-12-17   |
 | CVE-2024-50379                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-12-17   |
 | CVE-2024-38819                                          |      ✅      | Official Nuclei template.                               |   2024-12-17   |
-| CVE-2024-12356                                          |      ❌      | Nuclei template uses the code protocol (not enabled in Agent Nuclei). |   2024-12-17   |
+| CVE-2024-12356                                          |      ❌      | [Asteroid owner-inventory assessment](docs/coverage-audit-2026-11-05.md): offline only; no automatic agent-group detection. |   2024-12-17   |
 | CVE-2024-55956                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-12-13   |
 | CVE-2024-11205                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-12-10   |
 | CVE-2024-11772                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2024-12-10   |
@@ -811,7 +829,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2023-42917                                          |      ❌      | Not enough technical details available.                 |   2023-11-30   |
 | CVE-2023-6345                                           |      ❌      | Not enough technical details available.                 |   2023-11-29   |
 | CVE-2023-49103                                          |      ✅      | Official Nuclei template.                               |   2023-11-21   |
-| CVE-2023-49105                                          |      ❌      | Nuclei template uses the code protocol (not enabled in Agent Nuclei). |   2023-11-21   |
+| CVE-2023-49105                                          |      ⏳      | [Asteroid remote metadata assessment](docs/coverage-audit-2026-11-05.md): pending integration/release; exploitability unconfirmed. |   2023-11-21   |
 | CVE-2023-43177                                          |      ✅      | Official Nuclei template.                               |   2023-11-17   |
 | CVE-2023-48365                                          |      ❌      | Requires authentication.                                |   2023-11-15   |
 | CVE-2023-36036                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-11-14   |
@@ -1402,7 +1420,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2020-3259                                           |      ❌      | No public Nuclei template available.                    |   2020-05-06   |
 | CVE-2020-12641                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2020-05-04   |
 | CVE-2020-1631                                           |      ❌      | Missing public exploit.                                 |   2020-05-04   |
-| CVE-2020-11651                                          |      ❌      | Metasploit module without a check/check_code.           |   2020-04-30   |
+| CVE-2020-11651                                          |      ❌      | [Asteroid owner-inventory assessment](docs/coverage-audit-2026-11-05.md): offline only; no automatic agent-group detection. |   2020-04-30   |
 | CVE-2020-11652                                          |      ❌      | Metasploit module without a check/check_code.           |   2020-04-30   |
 | CVE-2020-11023                                          |      ❌      | User interaction needed.                                |   2020-04-29   |
 | CVE-2020-12271                                          |      ❌      | Missing public exploit.                                 |   2020-04-27   |
@@ -1619,7 +1637,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2018-8414                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2018-08-15   |
 | CVE-2018-8406                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2018-08-15   |
 | CVE-2018-14933                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2018-08-04   |
-| CVE-2018-14847                                          |      ❌      | Metasploit module without a check/check_code.           |   2018-08-02   |
+| CVE-2018-14847                                          |      ❌      | [Asteroid owner-inventory assessment](docs/coverage-audit-2026-11-05.md): offline only; no automatic agent-group detection. |   2018-08-02   |
 | CVE-2018-7602                                           |      ✅      | Official Nuclei template.                               |   2018-07-19   |
 | CVE-2018-8298                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2018-07-10   |
 | CVE-2018-4990                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2018-07-09   |
