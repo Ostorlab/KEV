@@ -160,12 +160,16 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 > not accepted (see [CONTRIBUTING.md](CONTRIBUTING.md)); rows excluded for this reason read "Template modifies the target (intrusive).".
 > Templates that use `interactsh` confirm exploitation only when the target can reach the out-of-band callback server.
 
-The pending Asteroid addition contains four remote HTTP metadata detectors for
-seven CVE identifiers, marked ⏳ below until an Asteroid release includes them.
-They assess potential exposure from advertised product/version metadata;
+The pending [Asteroid contribution](https://github.com/Ostorlab/agent_asteroid/pull/286)
+adds four remote HTTP metadata detectors covering seven CVE identifiers. These
+rows remain marked ⏳ until the contribution merges and an agent image containing
+the detectors is published.
+The checks read anonymous JSON product/version metadata from `/openapi.json`
+(LiteLLM), `/api/v1/configs` (Kestra), `/identity` (Plex), and `/status.php`
+(ownCloud) to assess potential exposure;
 exploitability and configuration prerequisites remain unconfirmed. See the
 [detector evidence and limitations](https://github.com/Ostorlab/agent_asteroid/blob/400dd1d89609e9bd3e59628e3ead4b342a5c4225/docs/kev-web-exposure-2026-11-05.md).
-The other 23 CVEs selected in the gap audit remain **unimplemented remote gaps**.
+Other entries marked ❌ remain without remote detection.
 
 | CVE ID                                                  | Implemented | Detail                                                  | Published Date |
 |:--------------------------------------------------------|:-----------:|:--------------------------------------------------------|:--------------:|
