@@ -164,7 +164,7 @@ The pending [Asteroid contribution](https://github.com/Ostorlab/agent_asteroid/p
 adds four remote HTTP metadata detectors covering seven CVE identifiers. These
 rows remain marked ⏳ until the contribution merges and an agent image containing
 the detectors is published.
-The checks read anonymous JSON product/version metadata from `/openapi.json`
+The checks read only unauthenticated product/version metadata from `/openapi.json`
 (LiteLLM), `/api/v1/configs` (Kestra), `/identity` (Plex), and `/status.php`
 (ownCloud) to assess potential exposure;
 exploitability and configuration prerequisites remain unconfirmed. See the
@@ -173,10 +173,10 @@ Other entries marked ❌ remain without remote detection.
 
 | CVE ID                                                  | Implemented | Detail                                                  | Published Date |
 |:--------------------------------------------------------|:-----------:|:--------------------------------------------------------|:--------------:|
-| CVE-2026-96652                                          |      ⏳      | Pending Asteroid release: [Plex Media Server remote metadata exposure check](https://github.com/Ostorlab/agent_asteroid/blob/400dd1d89609e9bd3e59628e3ead4b342a5c4225/agent/exploits/cve_2026_96652.py); exploitability unconfirmed. |   2026-09-23   |
-| CVE-2026-96654                                          |      ⏳      | Pending Asteroid release: [Plex Media Server remote metadata exposure check](https://github.com/Ostorlab/agent_asteroid/blob/400dd1d89609e9bd3e59628e3ead4b342a5c4225/agent/exploits/cve_2026_96652.py); exploitability unconfirmed. |   2026-09-23   |
-| CVE-2026-96655                                          |      ⏳      | Pending Asteroid release: [Plex Media Server remote metadata exposure check](https://github.com/Ostorlab/agent_asteroid/blob/400dd1d89609e9bd3e59628e3ead4b342a5c4225/agent/exploits/cve_2026_96652.py); exploitability unconfirmed. |   2026-09-23   |
-| CVE-2026-96656                                          |      ⏳      | Pending Asteroid release: [Plex Media Server remote metadata exposure check](https://github.com/Ostorlab/agent_asteroid/blob/400dd1d89609e9bd3e59628e3ead4b342a5c4225/agent/exploits/cve_2026_96652.py); exploitability unconfirmed. |   2026-09-23   |
+| CVE-2026-96652                                          |      ⏳      | Pending Asteroid release: [Plex Media Server shared metadata detector](https://github.com/Ostorlab/agent_asteroid/blob/400dd1d89609e9bd3e59628e3ead4b342a5c4225/agent/exploits/cve_2026_96652.py) (single detector covering CVE-2026-96652, CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656); exploitability unconfirmed. |   2026-09-23   |
+| CVE-2026-96654                                          |      ⏳      | Pending Asteroid release: [Plex Media Server shared metadata detector](https://github.com/Ostorlab/agent_asteroid/blob/400dd1d89609e9bd3e59628e3ead4b342a5c4225/agent/exploits/cve_2026_96652.py) (single detector covering CVE-2026-96652, CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656); exploitability unconfirmed. |   2026-09-23   |
+| CVE-2026-96655                                          |      ⏳      | Pending Asteroid release: [Plex Media Server shared metadata detector](https://github.com/Ostorlab/agent_asteroid/blob/400dd1d89609e9bd3e59628e3ead4b342a5c4225/agent/exploits/cve_2026_96652.py) (single detector covering CVE-2026-96652, CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656); exploitability unconfirmed. |   2026-09-23   |
+| CVE-2026-96656                                          |      ⏳      | Pending Asteroid release: [Plex Media Server shared metadata detector](https://github.com/Ostorlab/agent_asteroid/blob/400dd1d89609e9bd3e59628e3ead4b342a5c4225/agent/exploits/cve_2026_96652.py) (single detector covering CVE-2026-96652, CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656); exploitability unconfirmed. |   2026-09-23   |
 | CVE-2026-94127                                          |      ❌      | No public Nuclei template available.                    |   2026-09-22   |
 | CVE-2026-93952                                          |      ❌      | No public Nuclei template available.                    |   2026-09-22   |
 | CVE-2026-93616                                          |      ❌      | No public Nuclei template available.                    |   2026-09-22   |
