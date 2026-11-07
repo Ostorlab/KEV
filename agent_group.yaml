@@ -726,6 +726,7 @@ agents:
             - https://raw.githubusercontent.com/Ostorlab/KEV/main/nuclei/confluence-xslt-macro-ssrf.yaml
             - https://raw.githubusercontent.com/Ostorlab/KEV/main/nuclei/tp-link-wr840n-auth-bypass.yaml
             - https://raw.githubusercontent.com/Ostorlab/KEV/main/nuclei/wp-easy-wp-smtp-log-exposure.yaml
+            - https://raw.githubusercontent.com/Ostorlab/KEV/main/nuclei/CVE-2026-119977.yaml
       - name: use_default_templates
         type: boolean
         description: use nuclei's default templates to scan.

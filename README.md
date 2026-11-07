@@ -194,6 +194,7 @@ The table combines the 2026-11-07 Nuclei backlog additions with the full histori
 
 | CVE ID                                                  | Implemented | Detail                                                  | Published Date (CVE / Nuclei†) |
 |:--------------------------------------------------------|:-----------:|:--------------------------------------------------------|:--------------:|
+| CVE-2026-119977 | ✅ | Official Nuclei template; added 2026-11-07; version observation only (upgrade-window race not attempted; upstream PR [17680](https://github.com/projectdiscovery/nuclei-templates/pull/17680) pending). | 2026-10-31 |
 | CVE-2011-3600 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-01-07† |
 | CVE-2017-7504 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-25† |
 | CVE-2018-11714 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-17† |
