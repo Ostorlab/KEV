@@ -177,16 +177,20 @@ Other entries marked ❌ remain without remote detection.
 
 The complete Nuclei tree at [`fef763cd6e1d`](https://github.com/projectdiscovery/nuclei-templates/tree/fef763cd6e1da264eca8668741edef52faa743f6) maps to **503 CVEs** in the remaining critical/high scanner backlog. This change adds **256 upstream templates** for **255 CVEs**, preserves existing registered detectors for **46 CVEs**, and records **202 CVEs** whose candidates need a policy-compliant detector or additional runtime support.
 
-The [exact CSV inventory](coverage/2026-11-07/nuclei-transfer.csv) and [JSON provenance manifest](coverage/2026-11-07/nuclei-transfer.json) list every mapped CVE, source path and hash, local registration, deferred reason, and prerequisite. Of the 256 imports, 254 preserve upstream bytes and signatures under the [upstream MIT license](coverage/2026-11-07/UPSTREAM-LICENSE.md). CVE-2025-10090 has corrected advisory references; CVE-2025-10162 has corrected affected-version and remediation metadata. These two templates retain their detection requests and matchers, omit the invalidated upstream signatures, and record separate source/local hashes and correction details in the manifest. Existing curated detectors are preserved and have their own local hashes.
+The [exact CSV inventory](coverage/2026-11-07/nuclei-transfer.csv) and [JSON provenance manifest](coverage/2026-11-07/nuclei-transfer.json) list every mapped CVE, source path and hash, local registration, deferred reason, and prerequisite. Of the 256 imports, 254 preserve upstream bytes and signatures under the [upstream MIT license](coverage/2026-11-07/UPSTREAM-LICENSE.md).
+
+CVE-2025-10090 has corrected advisory references; CVE-2025-10162 has corrected affected-version and remediation metadata. These two templates retain their detection requests and matchers, omit the invalidated upstream signatures, and record separate source/local hashes and correction details in the manifest.
+
+Existing curated detectors are preserved and have their own local hashes.
 
 - Registration makes a template available to this agent group; it does not establish detection against an unauthenticated target or prove exploitation.
 - Detectors using embedded default credentials, specific paths, or an out-of-band callback only confirm when those conditions hold.
-- Candidates with unbound operator variables are deferred because the current agent adapter cannot supply them.
+- Templates that reference variables the Agent Nuclei runtime cannot resolve are deferred.
 - Read-only version/fingerprint templates provide indicative coverage; they do not confirm exploitability.
 - No affected/patched product lab was run for this transfer; verification covered template syntax, provenance, registrations, and reviewed request payloads.
 - Deferred candidates are not registered.
 
-The table combines the 2026-11-07 Nuclei backlog additions with the full historical coverage inventory. **† Nuclei template date:** for rows added in this transfer, the Published Date column shows when the template first appeared in the upstream Nuclei tree, not the CVE's original disclosure date. For example, CVE-2011-3600 has a 2026-01-07 template date, not a 2026 vulnerability disclosure date. `—†` means the template predates the audited 2026 inventory and its publication date is not provided here. Unmarked dates in pre-existing rows retain their original CVE publication dates. The import date is 2026-11-07.
+The table combines the 2026-11-07 Nuclei backlog additions with the full historical coverage inventory. The import date is 2026-11-07.
 
 | CVE ID                                                  | Implemented | Detail                                                  | Published Date (CVE / Nuclei†) |
 |:--------------------------------------------------------|:-----------:|:--------------------------------------------------------|:--------------:|
@@ -2310,3 +2314,5 @@ The table combines the 2026-11-07 Nuclei backlog additions with the full histori
 | Kubernetes Open Access Remote Code Execution.           |      ✅      | Tsunami Detector.                                       |       -        |
 | Selenium Grid - RCE via Chrome webdriver.               |      ✅      | Tsunami Detector.                                       |       -        |
 | GoCD Pre-Auth Arbitrary File Reading vulnerability.     |      ✅      | Tsunami Detector.                                       |       -        |
+
+**† Nuclei template date:** for rows added in this transfer, the Published Date column shows when the template first appeared in the upstream Nuclei tree, not the CVE's original disclosure date. For example, CVE-2011-3600 has a 2026-01-07 template date, not a 2026 vulnerability disclosure date. Unmarked dates in pre-existing rows retain their original CVE publication dates.
