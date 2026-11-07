@@ -3142,7 +3142,10 @@
       "local_templates": [
         {
           "path": "nuclei/CVE-2025-10090.yaml",
-          "sha256": "a033fd4dde90cc3ba841e70f18ab931c6ee87caf14f8a39ff47bce068210ddcf"
+          "sha256": "49725f5e57186b96b6d44e5b21e3657cbea8924a8018efab496c6b24c30a3d04",
+          "metadata_correction": "Correct unrelated references using the Jinher OA GetTreeDate.aspx CNA advisory references.",
+          "correction_reference": "https://cveawg.mitre.org/api/cve/CVE-2025-10090",
+          "upstream_signature_removed": true
         }
       ],
       "upstream_templates": [
@@ -3172,7 +3175,10 @@
       "local_templates": [
         {
           "path": "nuclei/CVE-2025-10162.yaml",
-          "sha256": "5079378b5251cd925e59ba95a8239704ed84045cdade99316ba487098c88eadd"
+          "sha256": "d1cee473fe273427733990637a2ccd926fa914baf7e94d983a8437c6fbb37f01",
+          "metadata_correction": "Correct affected versions and remediation using the WPScan CNA record updated 2026-10-12: version 14 was an incomplete fix, versions through 15.1 remain affected, and no complete fix is available.",
+          "correction_reference": "https://cveawg.mitre.org/api/cve/CVE-2025-10162",
+          "upstream_signature_removed": true
         }
       ],
       "upstream_templates": [
