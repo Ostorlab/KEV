@@ -160,8 +160,25 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 > not accepted (see [CONTRIBUTING.md](CONTRIBUTING.md)); rows excluded for this reason read "Template modifies the target (intrusive).".
 > Templates that use `interactsh` confirm exploitation only when the target can reach the out-of-band callback server.
 
+The pending [Agent Asteroid pull request](https://github.com/Ostorlab/agent_asteroid/pull/286)
+adds four remote HTTP metadata detectors covering seven CVE identifiers. These
+rows remain marked ⏳ until the pull request merges and an agent image containing
+the detectors is published.
+
+The checks read only unauthenticated product/version metadata from `/openapi.json`
+(LiteLLM), `/api/v1/configs` (Kestra), `/identity` (Plex), and `/status.php`
+(ownCloud) to assess potential exposure;
+exploitability and configuration prerequisites remain unconfirmed. See the
+[detector evidence and limitations](https://github.com/Ostorlab/agent_asteroid/blob/400dd1d89609e9bd3e59628e3ead4b342a5c4225/docs/kev-web-exposure-2026-11-05.md).
+
+Other entries marked ❌ remain without remote detection.
+
 | CVE ID                                                  | Implemented | Detail                                                  | Published Date |
 |:--------------------------------------------------------|:-----------:|:--------------------------------------------------------|:--------------:|
+| CVE-2026-96652                                          |      ⏳      | Pending Agent Asteroid release: [Plex Media Server metadata exposure check](https://github.com/Ostorlab/agent_asteroid/blob/400dd1d89609e9bd3e59628e3ead4b342a5c4225/agent/exploits/cve_2026_96652.py) (one detector covering CVE-2026-96652/96654/96655/96656); exploitability unconfirmed. |   2026-09-23   |
+| CVE-2026-96654                                          |      ⏳      | Pending Agent Asteroid release: [Plex Media Server metadata exposure check](https://github.com/Ostorlab/agent_asteroid/blob/400dd1d89609e9bd3e59628e3ead4b342a5c4225/agent/exploits/cve_2026_96652.py) (one detector covering CVE-2026-96652/96654/96655/96656); exploitability unconfirmed. |   2026-09-23   |
+| CVE-2026-96655                                          |      ⏳      | Pending Agent Asteroid release: [Plex Media Server metadata exposure check](https://github.com/Ostorlab/agent_asteroid/blob/400dd1d89609e9bd3e59628e3ead4b342a5c4225/agent/exploits/cve_2026_96652.py) (one detector covering CVE-2026-96652/96654/96655/96656); exploitability unconfirmed. |   2026-09-23   |
+| CVE-2026-96656                                          |      ⏳      | Pending Agent Asteroid release: [Plex Media Server metadata exposure check](https://github.com/Ostorlab/agent_asteroid/blob/400dd1d89609e9bd3e59628e3ead4b342a5c4225/agent/exploits/cve_2026_96652.py) (one detector covering CVE-2026-96652/96654/96655/96656); exploitability unconfirmed. |   2026-09-23   |
 | CVE-2026-94127                                          |      ❌      | No public Nuclei template available.                    |   2026-09-22   |
 | CVE-2026-93952                                          |      ❌      | No public Nuclei template available.                    |   2026-09-22   |
 | CVE-2026-93616                                          |      ❌      | No public Nuclei template available.                    |   2026-09-22   |
@@ -223,12 +240,12 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2026-15410                                          |      ❌      | No Nuclei template; chained with CVE-2026-15409 (covered). |   2026-07-14   |
 | CVE-2026-15409                                          |      ✅      | Official Nuclei template.                               |   2026-07-14   |
 | CVE-2026-56291                                          |      ❌      | Template modifies the target (intrusive).               |   2026-07-09   |
-| CVE-2026-59822                                          |      ❌      | No public Nuclei template available.                    |   2026-07-08   |
+| CVE-2026-59822                                          |      ⏳      | Pending Agent Asteroid release: [LiteLLM remote metadata exposure check](https://github.com/Ostorlab/agent_asteroid/blob/400dd1d89609e9bd3e59628e3ead4b342a5c4225/agent/exploits/cve_2026_59822.py); exploitability unconfirmed. |   2026-07-08   |
 | CVE-2026-53362                                          |      ❌      | Local attack vector.                                    |   2026-07-04   |
 | CVE-2026-8452                                           |      ❌      | No public Nuclei template available.                    |   2026-06-30   |
 | CVE-2026-48282                                          |      ❌      | Template modifies the target (intrusive).               |   2026-06-30   |
 | CVE-2026-56290                                          |      ❌      | Template modifies the target (intrusive).               |   2026-06-29   |
-| CVE-2026-49869                                          |      ❌      | No public Nuclei template available.                    |   2026-06-26   |
+| CVE-2026-49869                                          |      ⏳      | Pending Agent Asteroid release: [Kestra OSS remote metadata exposure check](https://github.com/Ostorlab/agent_asteroid/blob/400dd1d89609e9bd3e59628e3ead4b342a5c4225/agent/exploits/cve_2026_49869.py); exploitability unconfirmed. |   2026-06-26   |
 | CVE-2026-53266                                          |      ❌      | Local attack vector.                                    |   2026-06-25   |
 | CVE-2026-55255                                          |      ❌      | Requires authentication.                                |   2026-06-23   |
 | CVE-2026-48939                                          |      ❌      | Template modifies the target (intrusive).               |   2026-06-20   |
@@ -811,7 +828,7 @@ For the moment, we are currently focused on the CISA KEV Database and Google Tsu
 | CVE-2023-42917                                          |      ❌      | Not enough technical details available.                 |   2023-11-30   |
 | CVE-2023-6345                                           |      ❌      | Not enough technical details available.                 |   2023-11-29   |
 | CVE-2023-49103                                          |      ✅      | Official Nuclei template.                               |   2023-11-21   |
-| CVE-2023-49105                                          |      ❌      | Nuclei template uses the code protocol (not enabled in Agent Nuclei). |   2023-11-21   |
+| CVE-2023-49105                                          |      ⏳      | Pending Agent Asteroid release: [ownCloud remote metadata exposure check](https://github.com/Ostorlab/agent_asteroid/blob/400dd1d89609e9bd3e59628e3ead4b342a5c4225/agent/exploits/cve_2023_49105.py); exploitability unconfirmed. |   2023-11-21   |
 | CVE-2023-43177                                          |      ✅      | Official Nuclei template.                               |   2023-11-17   |
 | CVE-2023-48365                                          |      ❌      | Requires authentication.                                |   2023-11-15   |
 | CVE-2023-36036                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2023-11-14   |
