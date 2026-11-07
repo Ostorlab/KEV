@@ -150,7 +150,7 @@ Contributions are welcome, especially new detectors for recently exploited vulne
 
 ## Current Coverage
 
-For the moment, we are currently focused on the CISA KEV Database and Google Tsunami.
+Coverage includes the CISA KEV Database, Google Tsunami, and the scanner backlog below. Inclusion in this repository does not imply membership in the CISA KEV catalog.
 
 > [!NOTE]
 > ✅ = detected by this agent group; ❌ = not detected (the Detail column gives the reason); ⏳ = in progress.
@@ -173,18 +173,286 @@ exploitability and configuration prerequisites remain unconfirmed. See the
 
 Other entries marked ❌ remain without remote detection.
 
-| CVE ID                                                  | Implemented | Detail                                                  | Published Date |
+### Nuclei backlog and full coverage
+
+The complete Nuclei tree at [`fef763cd6e1d`](https://github.com/projectdiscovery/nuclei-templates/tree/fef763cd6e1da264eca8668741edef52faa743f6) maps to **503 CVEs** in the remaining critical/high scanner backlog. This change adds **256 upstream templates** for **255 CVEs**, preserves existing registered detectors for **46 CVEs**, and records **202 CVEs** whose candidates need a policy-compliant detector or additional runtime support.
+
+The [exact CSV inventory](coverage/2026-11-07/nuclei-transfer.csv) and [JSON provenance manifest](coverage/2026-11-07/nuclei-transfer.json) list every mapped CVE, source path and hash, local registration, deferred reason, and prerequisite. Of the 256 imports, 254 preserve upstream bytes and signatures under the [upstream MIT license](coverage/2026-11-07/UPSTREAM-LICENSE.md).
+
+CVE-2025-10090 has corrected advisory references; CVE-2025-10162 has corrected affected-version and remediation metadata. These two templates retain their detection requests and matchers, omit the invalidated upstream signatures, and record separate source/local hashes and correction details in the manifest.
+
+Existing curated detectors are preserved and have their own local hashes.
+
+- Registration makes a template available to this agent group; it does not establish detection against an unauthenticated target or prove exploitation.
+- Detectors using embedded default credentials, specific paths, or an out-of-band callback only confirm when those conditions hold.
+- Templates that reference variables the Agent Nuclei runtime cannot resolve are deferred.
+- Read-only version/fingerprint templates provide indicative coverage; they do not confirm exploitability.
+- No affected/patched product lab was run for this transfer; verification covered template syntax, provenance, registrations, and reviewed request payloads.
+- Deferred candidates are not registered.
+
+The table combines the 2026-11-07 Nuclei backlog additions with the full historical coverage inventory. The import date is 2026-11-07.
+
+| CVE ID                                                  | Implemented | Detail                                                  | Published Date (CVE / Nuclei†) |
 |:--------------------------------------------------------|:-----------:|:--------------------------------------------------------|:--------------:|
+| CVE-2011-3600 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-01-07† |
+| CVE-2017-7504 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-25† |
+| CVE-2018-11714 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-17† |
+| CVE-2018-7765 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-01-13† |
+| CVE-2019-12935 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-01-15† |
+| CVE-2019-25246 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-05-25† |
+| CVE-2020-10532 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-05-27† |
+| CVE-2020-29134 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-09† |
+| CVE-2020-35234 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-01-19† |
+| CVE-2020-37123 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-02-11† |
+| CVE-2021-21246 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-01-23† |
+| CVE-2021-23337 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-07† |
+| CVE-2021-28481 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-02-17† |
+| CVE-2021-3152 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-23† |
+| CVE-2021-3239 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-06-03† |
+| CVE-2021-42392 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-18† |
+| CVE-2021-4463 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-05-25† |
+| CVE-2021-46371 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-10† |
+| CVE-2022-1281 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-19† |
+| CVE-2022-1692 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-03-21† |
+| CVE-2022-31678 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-02-04† |
+| CVE-2022-41678 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-01† |
+| CVE-2022-4223 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-01-23† |
+| CVE-2022-44727 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-06-08† |
+| CVE-2022-4940 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-01-03† |
+| CVE-2023-25826 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-24† |
+| CVE-2023-28787 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-02-12† |
+| CVE-2023-31719 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-29† |
+| CVE-2023-34092 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-03-30† |
+| CVE-2023-35708 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-02-04† |
+| CVE-2023-3643 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-03-11† |
+| CVE-2023-40924 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-07† |
+| CVE-2023-5203 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-02-26† |
+| CVE-2023-54335 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-29† |
+| CVE-2023-6030 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-03-11† |
+| CVE-2023-6750 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-09† |
+| CVE-2023-7165 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-09† |
+| CVE-2023-7337 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-03-12† |
+| CVE-2024-10763 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-05-12† |
+| CVE-2024-12025 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-03-12† |
+| CVE-2024-1751 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-02-09† |
+| CVE-2024-26291 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-22† |
+| CVE-2024-29137 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-01-14† |
+| CVE-2024-29415 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-01-29† |
+| CVE-2024-32114 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-05-06† |
+| CVE-2024-36420 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-05-25† |
+| CVE-2024-37014 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-04† |
+| CVE-2024-4322 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-05-11† |
+| CVE-2024-48259 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-05-11† |
+| CVE-2024-49357 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-06† |
+| CVE-2024-56511 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-07-23† |
+| CVE-2024-6250 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-01-29† |
+| CVE-2024-9362 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-05-25† |
+| CVE-2024-9643 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-02-17† |
+| CVE-2025-10090 | ✅ | Upstream Nuclei template with corrected advisory metadata; added 2026-11-07. | 2026-02-11† |
+| CVE-2025-10162 | ✅ | Upstream Nuclei template with corrected advisory metadata; added 2026-11-07. | 2026-05-05† |
+| CVE-2025-11452 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-24† |
+| CVE-2025-13339 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-06-11† |
+| CVE-2025-1361 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-23† |
+| CVE-2025-14124 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-14† |
+| CVE-2025-14437 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-03-30† |
+| CVE-2025-2221 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-13† |
+| CVE-2025-25570 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-01-13† |
+| CVE-2025-2558 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-09† |
+| CVE-2025-2611 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-02-11† |
+| CVE-2025-27817 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-01-23† |
+| CVE-2025-28242 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-01-27† |
+| CVE-2025-32778 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-05-25† |
+| CVE-2025-34033 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-24† |
+| CVE-2025-40552 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-02-26† |
+| CVE-2025-40554 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-02-17† |
+| CVE-2025-4210 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-01-14† |
+| CVE-2025-4524 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-17† |
+| CVE-2025-49001 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-06-03† |
+| CVE-2025-52694 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-01-22† |
+| CVE-2025-54726 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-02-17† |
+| CVE-2025-56520 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-01-20† |
+| CVE-2025-57231 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-14† |
+| CVE-2025-59341 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-21† |
+| CVE-2025-5947 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-03-31† |
+| CVE-2025-64500 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-03† |
+| CVE-2025-66516 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-01-21† |
+| CVE-2025-66744 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-02-10† |
+| CVE-2025-68043 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-03-25† |
+| CVE-2025-68493 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-07-31† |
+| CVE-2025-69971 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-02-16† |
+| CVE-2025-71243 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-03-11† |
+| CVE-2025-71258 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-03-20† |
+| CVE-2025-71259 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-03-20† |
+| CVE-2026-0702 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-09† |
+| CVE-2026-0768 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-15† |
+| CVE-2026-102764 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-11-03† |
+| CVE-2026-102782 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-26† |
+| CVE-2026-102878 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-26† |
+| CVE-2026-105133 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-21† |
+| CVE-2026-10768 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-14† |
+| CVE-2026-108123 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-28† |
+| CVE-2026-10823 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-06-29† |
+| CVE-2026-112866 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-11-03† |
+| CVE-2026-116167 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-28† |
+| CVE-2026-116485 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-27† |
+| CVE-2026-11801 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-24† |
+| CVE-2026-120446 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-11-04† |
+| CVE-2026-1207 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-02-09† |
+| CVE-2026-12227 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-28† |
+| CVE-2026-12609 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-12† |
+| CVE-2026-12741 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-14† |
+| CVE-2026-13153 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-18† |
+| CVE-2026-1557 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-03-18† |
+| CVE-2026-1581 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-03-20† |
+| CVE-2026-18072 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-17† |
+| CVE-2026-18110 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-24† |
+| CVE-2026-18937 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-22† |
+| CVE-2026-19900 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-18† |
+| CVE-2026-2025 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-03-16† |
+| CVE-2026-21859 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-01-22† |
+| CVE-2026-21891 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-02-12† |
+| CVE-2026-22557 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-06-22† |
+| CVE-2026-2262 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-21† |
+| CVE-2026-22739 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-03-30† |
+| CVE-2026-23482 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-30† |
+| CVE-2026-23491 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-25† |
+| CVE-2026-23536 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-25† |
+| CVE-2026-2413 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-03-12† |
+| CVE-2026-24207 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-07-13† |
+| CVE-2026-25231 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-14† |
+| CVE-2026-25545 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-05-06† |
+| CVE-2026-25555 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-06-17† |
+| CVE-2026-25703 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-24† |
+| CVE-2026-25892 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-02-11† |
+| CVE-2026-26190 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-06-08† |
+| CVE-2026-26216 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-02† |
+| CVE-2026-26265 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-14† |
+| CVE-2026-26341 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-05-11† |
+| CVE-2026-2652 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-06-04† |
+| CVE-2026-26980 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-06† |
+| CVE-2026-2699 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-07† |
+| CVE-2026-27174 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-21† |
+| CVE-2026-27833 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-06-15† |
+| CVE-2026-27934 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-13† |
+| CVE-2026-27960 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-15† |
+| CVE-2026-28141 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-15† |
+| CVE-2026-28411 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-07† |
+| CVE-2026-28414 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-03-31† |
+| CVE-2026-29059 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-06-03† |
+| CVE-2026-29962 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-10† |
+| CVE-2026-29963 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-15† |
+| CVE-2026-30824 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-15† |
+| CVE-2026-30849 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-11† |
+| CVE-2026-30928 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-03-22† |
+| CVE-2026-30958 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-06-30† |
+| CVE-2026-31831 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-07-23† |
+| CVE-2026-32596 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-03-19† |
+| CVE-2026-33032 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-16† |
+| CVE-2026-33057 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-30† |
+| CVE-2026-3326 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-07-13† |
+| CVE-2026-33340 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-14† |
+| CVE-2026-33476 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-06-11† |
+| CVE-2026-33497 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-07-21† |
+| CVE-2026-33626 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-30† |
+| CVE-2026-3395 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-13† |
+| CVE-2026-3396 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-14† |
+| CVE-2026-34151 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-29† |
+| CVE-2026-34453 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-02† |
+| CVE-2026-35037 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-20† |
+| CVE-2026-3576 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-19† |
+| CVE-2026-39339 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-05-04† |
+| CVE-2026-39364 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-09† |
+| CVE-2026-4020 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-01† |
+| CVE-2026-40242 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-17† |
+| CVE-2026-40887 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-17† |
+| CVE-2026-4106 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-13† |
+| CVE-2026-41179 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-04-23† |
+| CVE-2026-41452 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-06† |
+| CVE-2026-41948 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-15† |
+| CVE-2026-42031 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-05-05† |
+| CVE-2026-42281 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-05-14† |
+| CVE-2026-42461 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-11† |
+| CVE-2026-42564 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-23† |
+| CVE-2026-42569 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-05-14† |
+| CVE-2026-44262 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-06-03† |
+| CVE-2026-44338 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-06-11† |
+| CVE-2026-44343 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-07† |
+| CVE-2026-44825 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-07-29† |
+| CVE-2026-45298 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-06-09† |
+| CVE-2026-46364 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-06-11† |
+| CVE-2026-46372 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-05-20† |
+| CVE-2026-46725 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-05-25† |
+| CVE-2026-47717 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-06-18† |
+| CVE-2026-48048 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-28† |
+| CVE-2026-48611 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-07-06† |
+| CVE-2026-49060 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-22† |
+| CVE-2026-49069 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-20† |
+| CVE-2026-49777 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-06-11† |
+| CVE-2026-5032 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-19† |
+| CVE-2026-5073 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-06-09† |
+| CVE-2026-52806 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-18† |
+| CVE-2026-52824 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-07-21† |
+| CVE-2026-53519 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-13† |
+| CVE-2026-53595 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-10† |
+| CVE-2026-53755 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-13† |
+| CVE-2026-53976 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-13† |
+| CVE-2026-54066 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-06-19† |
+| CVE-2026-54419 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-11-04† |
+| CVE-2026-54617 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-12† |
+| CVE-2026-55552 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-05† |
+| CVE-2026-55864 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-28† |
+| CVE-2026-56062 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-23† |
+| CVE-2026-56070 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-21† |
+| CVE-2026-56270 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-19† |
+| CVE-2026-56292 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-08† |
+| CVE-2026-56681 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-24† |
+| CVE-2026-56782 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-07-01† |
+| CVE-2026-57219 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-20† |
+| CVE-2026-57582 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-02† |
+| CVE-2026-58467 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-22† |
+| CVE-2026-59509 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-15† |
+| CVE-2026-59726 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-15† |
+| CVE-2026-61560 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-28† |
+| CVE-2026-61736 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-14† |
+| CVE-2026-61808 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-14† |
+| CVE-2026-6279 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-21† |
+| CVE-2026-6377 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-13† |
+| CVE-2026-64638 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-07† |
+| CVE-2026-65442 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-08† |
+| CVE-2026-65694 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-07-30† |
+| CVE-2026-65761 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-26† |
+| CVE-2026-65919 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-14† |
+| CVE-2026-6639 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-22† |
+| CVE-2026-66914 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-23† |
+| CVE-2026-67208 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-13† |
+| CVE-2026-71209 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-11† |
+| CVE-2026-75128 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-11-02† |
+| CVE-2026-76268 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-16† |
+| CVE-2026-76904 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-25† |
+| CVE-2026-77806 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-26† |
+| CVE-2026-80099 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-22† |
+| CVE-2026-80462 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-13† |
+| CVE-2026-82456 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-18† |
+| CVE-2026-85200 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-15† |
+| CVE-2026-85688 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-18† |
+| CVE-2026-86206 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-09† |
+| CVE-2026-86207 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-08† |
+| CVE-2026-8679 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-05-25† |
+| CVE-2026-89013 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-09-28† |
+| CVE-2026-89026 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-23† |
+| CVE-2026-91136 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-12† |
+| CVE-2026-94169 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-10-20† |
+| CVE-2026-9506 | ✅ | Official Nuclei template; added 2026-11-07. | 2026-08-13† |
 | CVE-2026-96652                                          |      ⏳      | Pending Agent Asteroid release: [Plex Media Server metadata exposure check](https://github.com/Ostorlab/agent_asteroid/blob/400dd1d89609e9bd3e59628e3ead4b342a5c4225/agent/exploits/cve_2026_96652.py) (one detector covering CVE-2026-96652/96654/96655/96656); exploitability unconfirmed. |   2026-09-23   |
 | CVE-2026-96654                                          |      ⏳      | Pending Agent Asteroid release: [Plex Media Server metadata exposure check](https://github.com/Ostorlab/agent_asteroid/blob/400dd1d89609e9bd3e59628e3ead4b342a5c4225/agent/exploits/cve_2026_96652.py) (one detector covering CVE-2026-96652/96654/96655/96656); exploitability unconfirmed. |   2026-09-23   |
 | CVE-2026-96655                                          |      ⏳      | Pending Agent Asteroid release: [Plex Media Server metadata exposure check](https://github.com/Ostorlab/agent_asteroid/blob/400dd1d89609e9bd3e59628e3ead4b342a5c4225/agent/exploits/cve_2026_96652.py) (one detector covering CVE-2026-96652/96654/96655/96656); exploitability unconfirmed. |   2026-09-23   |
 | CVE-2026-96656                                          |      ⏳      | Pending Agent Asteroid release: [Plex Media Server metadata exposure check](https://github.com/Ostorlab/agent_asteroid/blob/400dd1d89609e9bd3e59628e3ead4b342a5c4225/agent/exploits/cve_2026_96652.py) (one detector covering CVE-2026-96652/96654/96655/96656); exploitability unconfirmed. |   2026-09-23   |
 | CVE-2026-94127                                          |      ❌      | No public Nuclei template available.                    |   2026-09-22   |
 | CVE-2026-93952                                          |      ❌      | No public Nuclei template available.                    |   2026-09-22   |
-| CVE-2026-93616                                          |      ❌      | No public Nuclei template available.                    |   2026-09-22   |
+| CVE-2026-93616                                          | ✅ | Official Nuclei template; added 2026-11-07. |   2026-09-22   |
 | CVE-2026-87902                                          |      ✅      | Official Nuclei template.                               |   2026-09-22   |
 | CVE-2026-87886                                          |      ❌      | Local attack vector.                                    |   2026-09-17   |
-| CVE-2026-76460                                          |      ❌      | No public Nuclei template available.                    |   2026-09-16   |
+| CVE-2026-76460                                          | ✅ | Official Nuclei template; added 2026-11-07. |   2026-09-16   |
 | CVE-2026-58704                                          |      ❌      | Adjacent network attack vector.                         |   2026-09-15   |
 | CVE-2026-76461                                          |      ❌      | No public Nuclei template available.                    |   2026-09-14   |
 | CVE-2026-85706                                          |      ✅      | Official Nuclei template.                               |   2026-09-12   |
@@ -193,7 +461,7 @@ Other entries marked ❌ remain without remote detection.
 | CVE-2026-85880                                          |      ❌      | Local attack vector.                                    |   2026-09-08   |
 | CVE-2026-84869                                          |      ❌      | Requires authentication.                                |   2026-09-08   |
 | CVE-2026-81963                                          |      ❌      | Local attack vector.                                    |   2026-09-08   |
-| CVE-2026-75650                                          |      ❌      | No public Nuclei template available.                    |   2026-09-07   |
+| CVE-2026-75650                                          | ❌ | Public Nuclei template deferred; see [inventory](coverage/2026-11-07/nuclei-transfer.csv). |   2026-09-07   |
 | CVE-2026-86218                                          |      ✅      | Official Nuclei template.                               |   2026-09-06   |
 | CVE-2026-86060                                          |      ❌      | No public Nuclei template available.                    |   2026-09-05   |
 | CVE-2026-67279                                          |      ❌      | No public Nuclei template available.                    |   2026-09-05   |
@@ -212,7 +480,7 @@ Other entries marked ❌ remain without remote detection.
 | CVE-2026-73570                                          |      ✅      | Official Nuclei template.                               |   2026-08-13   |
 | CVE-2026-66384                                          |      ❌      | Requires authentication.                                |   2026-08-12   |
 | CVE-2026-42018                                          |      ✅      | Official Nuclei template.                               |   2026-08-12   |
-| CVE-2026-71362                                          |      ❌      | Template modifies the target (intrusive).               |   2026-08-11   |
+| CVE-2026-71362                                          | ❌ | Public Nuclei template deferred; see [inventory](coverage/2026-11-07/nuclei-transfer.csv). |   2026-08-11   |
 | CVE-2026-68820                                          |      ❌      | Local attack vector.                                    |   2026-08-11   |
 | CVE-2026-65660                                          |      ❌      | Requires authentication.                                |   2026-08-11   |
 | CVE-2026-20349                                          |      ❌      | No public Nuclei template available.                    |   2026-08-11   |
@@ -239,17 +507,17 @@ Other entries marked ❌ remain without remote detection.
 | CVE-2026-50522                                          |      ❌      | No public Nuclei template available.                    |   2026-07-14   |
 | CVE-2026-15410                                          |      ❌      | No Nuclei template; chained with CVE-2026-15409 (covered). |   2026-07-14   |
 | CVE-2026-15409                                          |      ✅      | Official Nuclei template.                               |   2026-07-14   |
-| CVE-2026-56291                                          |      ❌      | Template modifies the target (intrusive).               |   2026-07-09   |
+| CVE-2026-56291                                          | ❌ | Public Nuclei template deferred; see [inventory](coverage/2026-11-07/nuclei-transfer.csv). |   2026-07-09   |
 | CVE-2026-59822                                          |      ⏳      | Pending Agent Asteroid release: [LiteLLM remote metadata exposure check](https://github.com/Ostorlab/agent_asteroid/blob/400dd1d89609e9bd3e59628e3ead4b342a5c4225/agent/exploits/cve_2026_59822.py); exploitability unconfirmed. |   2026-07-08   |
 | CVE-2026-53362                                          |      ❌      | Local attack vector.                                    |   2026-07-04   |
 | CVE-2026-8452                                           |      ❌      | No public Nuclei template available.                    |   2026-06-30   |
-| CVE-2026-48282                                          |      ❌      | Template modifies the target (intrusive).               |   2026-06-30   |
-| CVE-2026-56290                                          |      ❌      | Template modifies the target (intrusive).               |   2026-06-29   |
+| CVE-2026-48282                                          | ❌ | Public Nuclei template deferred; see [inventory](coverage/2026-11-07/nuclei-transfer.csv). |   2026-06-30   |
+| CVE-2026-56290                                          | ❌ | Public Nuclei template deferred; see [inventory](coverage/2026-11-07/nuclei-transfer.csv). |   2026-06-29   |
 | CVE-2026-49869                                          |      ⏳      | Pending Agent Asteroid release: [Kestra OSS remote metadata exposure check](https://github.com/Ostorlab/agent_asteroid/blob/400dd1d89609e9bd3e59628e3ead4b342a5c4225/agent/exploits/cve_2026_49869.py); exploitability unconfirmed. |   2026-06-26   |
 | CVE-2026-53266                                          |      ❌      | Local attack vector.                                    |   2026-06-25   |
 | CVE-2026-55255                                          |      ❌      | Requires authentication.                                |   2026-06-23   |
-| CVE-2026-48939                                          |      ❌      | Template modifies the target (intrusive).               |   2026-06-20   |
-| CVE-2026-48908                                          |      ❌      | Template modifies the target (intrusive).               |   2026-06-20   |
+| CVE-2026-48939                                          | ❌ | Public Nuclei template deferred; see [inventory](coverage/2026-11-07/nuclei-transfer.csv). |   2026-06-20   |
+| CVE-2026-48908                                          | ❌ | Public Nuclei template deferred; see [inventory](coverage/2026-11-07/nuclei-transfer.csv). |   2026-06-20   |
 | CVE-2026-12569                                          |      ❌      | No public Nuclei template available.                    |   2026-06-18   |
 | CVE-2026-7273                                           |      ❌      | Adjacent network attack vector.                         |   2026-06-16   |
 | CVE-2026-20262                                          |      ❌      | Requires authentication.                                |   2026-06-15   |
@@ -262,7 +530,7 @@ Other entries marked ❌ remain without remote detection.
 | CVE-2026-50751                                          |      ✅      | Official Nuclei template.                               |   2026-06-08   |
 | CVE-2026-11645                                          |      ❌      | User interaction needed.                                |   2026-06-08   |
 | CVE-2026-7473                                           |      ❌      | No public Nuclei template available.                    |   2026-06-05   |
-| CVE-2026-48907                                          |      ❌      | Template modifies the target (intrusive).               |   2026-06-05   |
+| CVE-2026-48907                                          | ❌ | Public Nuclei template deferred; see [inventory](coverage/2026-11-07/nuclei-transfer.csv). |   2026-06-05   |
 | CVE-2026-8037                                           |      ✅      | Official Nuclei template.                               |   2026-06-04   |
 | CVE-2026-28318                                          |      ❌      | No public Nuclei template available.                    |   2026-06-04   |
 | CVE-2026-20245                                          |      ❌      | Local attack vector.                                    |   2026-06-04   |
@@ -292,7 +560,7 @@ Other entries marked ❌ remain without remote detection.
 | CVE-2026-0300                                           |      ❌      | No public Nuclei template available.                    |   2026-05-06   |
 | CVE-2026-41940                                          |      ✅      | Official Nuclei template.                               |   2026-04-29   |
 | CVE-2026-31431                                          |      ❌      | Local attack vector.                                    |   2026-04-22   |
-| CVE-2026-39808                                          |      ❌      | Template modifies the target (intrusive).               |   2026-04-14   |
+| CVE-2026-39808                                          | ❌ | Public Nuclei template deferred; see [inventory](coverage/2026-11-07/nuclei-transfer.csv). |   2026-04-14   |
 | CVE-2026-33825                                          |      ❌      | Local attack vector.                                    |   2026-04-14   |
 | CVE-2026-33824                                          |      ❌      | No public Nuclei template available.                    |   2026-04-14   |
 | CVE-2026-32202                                          |      ❌      | User interaction needed.                                |   2026-04-14   |
@@ -385,9 +653,9 @@ Other entries marked ❌ remain without remote detection.
 | CVE-2025-62215                                          |      ❌      | Local attack vector.                                    |   2025-11-11   |
 | CVE-2025-60710                                          |      ❌      | Local attack vector.                                    |   2025-11-11   |
 | CVE-2025-12480                                          |      ✅      | Official Nuclei template.                               |   2025-11-10   |
-| CVE-2025-64328                                          |      ❌      | Requires authentication.                                |   2025-11-07   |
+| CVE-2025-64328                                          | ❌ | Public Nuclei template deferred; see [inventory](coverage/2026-11-07/nuclei-transfer.csv). |   2025-11-07   |
 | CVE-2023-43000                                          |      ❌      | User interaction needed.                                |   2025-11-05   |
-| CVE-2025-11953                                          |      ❌      | Template modifies the target (intrusive).               |   2025-11-03   |
+| CVE-2025-11953                                          | ❌ | Public Nuclei template deferred; see [inventory](coverage/2026-11-07/nuclei-transfer.csv). |   2025-11-03   |
 | CVE-2025-61757                                          |      ✅      | Official Nuclei template.                               |   2025-10-21   |
 | CVE-2025-61932                                          |      ❌      | No public Nuclei template available.                    |   2025-10-20   |
 | CVE-2025-53521                                          |      ❌      | No public Nuclei template available.                    |   2025-10-15   |
@@ -434,7 +702,7 @@ Other entries marked ❌ remain without remote detection.
 | CVE-2025-38352                                          |      ❌      | Local attack vector.                                    |   2025-07-22   |
 | CVE-2025-54313                                          |      ❌      | No public Nuclei template available.                    |   2025-07-19   |
 | CVE-2025-54309                                          |      ❌      | Nuclei template uses the code protocol (not enabled in Agent Nuclei). |   2025-07-18   |
-| CVE-2025-54068                                          |      ❌      | Template modifies the target (intrusive).               |   2025-07-17   |
+| CVE-2025-54068                                          | ❌ | Public Nuclei template deferred; see [inventory](coverage/2026-11-07/nuclei-transfer.csv). |   2025-07-17   |
 | CVE-2025-25257                                          |      ✅      | Official Nuclei template.                               |   2025-07-17   |
 | CVE-2025-20337                                          |      ❌      | No public Nuclei template available.                    |   2025-07-16   |
 | CVE-2025-6558                                           |      ❌      | User interaction needed.                                |   2025-07-15   |
@@ -1015,7 +1283,7 @@ Other entries marked ❌ remain without remote detection.
 | CVE-2022-3038                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2022-09-26   |
 | CVE-2022-3075                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2022-09-26   |
 | CVE-2022-41352                                          |      ❌      | Metasploit module without a check/check_code.           |   2022-09-25   |
-| CVE-2022-3236                                           |      ❌      | Missing public exploit.                                 |   2022-09-23   |
+| CVE-2022-3236                                           | ❌ | Public Nuclei template deferred; see [inventory](coverage/2026-11-07/nuclei-transfer.csv). |   2022-09-23   |
 | CVE-2022-39197                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2022-09-21   |
 | CVE-2022-32917                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2022-09-20   |
 | CVE-2022-35914                                          |      ✅      | Official Nuclei template.                               |   2022-09-19   |
@@ -1055,8 +1323,8 @@ Other entries marked ❌ remain without remote detection.
 | CVE-2022-0783                                           |      ✅      | Official Nuclei template.                               |   2022-05-02   |
 | CVE-2022-24706                                          |      ✅      | Official Nuclei template.                               |   2022-04-26   |
 | CVE-2022-29499                                          |      ❌      | Detection removed due to false positives.               |   2022-04-26   |
-| CVE-2022-27924                                          |      ❌      | Missing public exploit.                                 |   2022-04-20   |
-| CVE-2022-27925                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2022-04-20   |
+| CVE-2022-27924                                          | ❌ | Public Nuclei template deferred; see [inventory](coverage/2026-11-07/nuclei-transfer.csv). |   2022-04-20   |
+| CVE-2022-27925                                          | ❌ | Public Nuclei template deferred; see [inventory](coverage/2026-11-07/nuclei-transfer.csv). |   2022-04-20   |
 | CVE-2022-27926                                          |      ✅      | Official Nuclei template.                               |   2022-04-20   |
 | CVE-2022-26133                                          |      ✅      | Covered by tsunami scanner.                             |   2022-04-20   |
 | CVE-2022-21445                                          |      ✅      | Custom Exploit by Ostorlab: included in Agent Asteroid. |   2022-04-19   |
@@ -1248,7 +1516,7 @@ Other entries marked ❌ remain without remote detection.
 | CVE-2021-21985                                          |      ✅      | Official Nuclei template.                               |   2021-05-26   |
 | CVE-2021-27562                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2021-05-25   |
 | CVE-2021-29256                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2021-05-24   |
-| CVE-2021-28799                                          |      ❌      | Missing public exploit.                                 |   2021-05-12   |
+| CVE-2021-28799                                          | ✅ | Official Nuclei template; added 2026-11-07. |   2021-05-12   |
 | CVE-2021-31166                                          |      ❌      | Metasploit module without a check/check_code.           |   2021-05-11   |
 | CVE-2021-31207                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2021-05-11   |
 | CVE-2021-28664                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2021-05-10   |
@@ -1450,7 +1718,7 @@ Other entries marked ❌ remain without remote detection.
 | CVE-2020-0069                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2020-03-10   |
 | CVE-2020-6207                                           |      ✅      | Official Nuclei template.                               |   2020-03-10   |
 | CVE-2016-11021                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2020-03-08   |
-| CVE-2020-10221                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2020-03-08   |
+| CVE-2020-10221                                          | ❌ | Public Nuclei template deferred; see [inventory](coverage/2026-11-07/nuclei-transfer.csv). |   2020-03-08   |
 | CVE-2020-10189                                          |      ✅      | Metasploit module.                                      |   2020-03-06   |
 | CVE-2019-20500                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2020-03-05   |
 | CVE-2020-9054                                           |      ✅      | Official Nuclei template.                               |   2020-03-04   |
@@ -1526,7 +1794,7 @@ Other entries marked ❌ remain without remote detection.
 | CVE-2019-1215                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2019-09-11   |
 | CVE-2019-1214                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2019-09-11   |
 | CVE-2019-15949                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2019-09-05   |
-| CVE-2019-13608                                          |      ❌      | Missing public exploit.                                 |   2019-08-29   |
+| CVE-2019-13608                                          | ✅ | Official Nuclei template; added 2026-11-07. |   2019-08-29   |
 | CVE-2019-15752                                          |      ❌      | Not remotely exploitable/User interaction needed.       |   2019-08-28   |
 | CVE-2019-15107                                          |      ✅      | Official Nuclei template.                               |   2019-08-15   |
 | CVE-2019-0344                                           |      ❌      | No public Nuclei template available.                    |   2019-08-14   |
@@ -1562,7 +1830,7 @@ Other entries marked ❌ remain without remote detection.
 | CVE-2019-0903                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2019-05-16   |
 | CVE-2019-0863                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2019-05-16   |
 | CVE-2019-0708                                           |      ✅      | Metasploit module.                                      |   2019-05-16   |
-| CVE-2018-14839                                          |      ❌      | RCE need call back .                                    |   2019-05-14   |
+| CVE-2018-14839                                          | ❌ | Public Nuclei template deferred; see [inventory](coverage/2026-11-07/nuclei-transfer.csv). |   2019-05-14   |
 | CVE-2019-3568                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2019-05-14   |
 | CVE-2019-11510                                          |      ✅      | Official Nuclei template.                               |   2019-05-08   |
 | CVE-2018-4063                                           |      ❌      | Requires authentication.                                |   2019-05-06   |
@@ -1592,7 +1860,7 @@ Other entries marked ❌ remain without remote detection.
 | CVE-2018-0153                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2019-03-21   |
 | CVE-2019-7238                                           |      ✅      | Official Nuclei template.                               |   2019-03-21   |
 | CVE-2019-1003029                                        |      ❌      | Not remotely exploitable/User interaction needed.       |   2019-03-08   |
-| CVE-2019-1003030                                        |      ❌      | Not remotely exploitable/User interaction needed.       |   2019-03-08   |
+| CVE-2019-1003030                                        | ✅ | Official Nuclei template; added 2026-11-07. |   2019-03-08   |
 | CVE-2018-18809                                          |      ✅      | Official Nuclei template.                               |   2019-03-07   |
 | CVE-2019-6223                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2019-03-05   |
 | CVE-2019-0604                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2019-03-05   |
@@ -1643,7 +1911,7 @@ Other entries marked ❌ remain without remote detection.
 | CVE-2018-5002                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2018-07-09   |
 | CVE-2018-9276                                           |      ❌      | Requires authentication.                                |   2018-07-02   |
 | CVE-2016-9079                                           |      ❌      | Not remotely exploitable/User interaction needed.       |   2018-06-11   |
-| CVE-2018-6961                                           |      ❌      | Call back needed .                                      |   2018-06-11   |
+| CVE-2018-6961                                           | ✅ | Official Nuclei template; added 2026-11-07. |   2018-06-11   |
 | CVE-2018-0296                                           |      ✅      | Official Nuclei template.                               |   2018-06-07   |
 | CVE-2018-11138                                          |      ✅      | Metasploit module.                                      |   2018-05-31   |
 | CVE-2018-4939                                           |      ❌      | Missing public exploit.                                 |   2018-05-19   |
@@ -2046,3 +2314,5 @@ Other entries marked ❌ remain without remote detection.
 | Kubernetes Open Access Remote Code Execution.           |      ✅      | Tsunami Detector.                                       |       -        |
 | Selenium Grid - RCE via Chrome webdriver.               |      ✅      | Tsunami Detector.                                       |       -        |
 | GoCD Pre-Auth Arbitrary File Reading vulnerability.     |      ✅      | Tsunami Detector.                                       |       -        |
+
+**† Nuclei template date:** for rows added in this transfer, the Published Date column shows when the template first appeared in the upstream Nuclei tree, not the CVE's original disclosure date. For example, CVE-2011-3600 has a 2026-01-07 template date, not a 2026 vulnerability disclosure date. Unmarked dates in pre-existing rows retain their original CVE publication dates.
